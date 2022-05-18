@@ -88,7 +88,7 @@
     <!-- Banshee ............................................................................... -->
     <!--                                                                                         -->
     <CActorUnit id="Banshee">
-        <Scale value="18.000000"/>
+        <Scale value="11.000000"/>
     </CActorUnit>
     <CActorAction id="BansheeAttack">
         <LaunchAssets Sound="Doodad_DominionEnergyCannon_Launch"/>
@@ -400,6 +400,7 @@
     </CActorSound>
     <CActorAction id="MothershipAttack">
         <LaunchAttachQuery Methods="Damage 3" Fallback="Damage"/>
+        <ActionFlags index="AlignedImpactsAndDamages" value="0"/>
     </CActorAction>
     <!-- Attack                                                                                  -->
     <CActorBeamSimple id="MothershipAttackBeam">

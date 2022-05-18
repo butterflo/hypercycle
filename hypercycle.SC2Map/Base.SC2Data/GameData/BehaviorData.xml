@@ -79,12 +79,15 @@
         <Duration value="100"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProduction">
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisplayDuration index="Self" value="1"/>
         <Modification TimeScale="4" AttackSpeedMultiplier="1">
             <VitalRegenArray index="Energy" value="0"/>
         </Modification>
+        <Cost>
+            <Vital index="Energy" value="0"/>
+        </Cost>
     </CBehaviorBuff>
     <CBehaviorBuff id="OverloadPenalty" parent="TimeWarpProduction">
         <Name value="Behavior/Name/OverloadPenalty"/>
@@ -95,9 +98,6 @@
             <StateFlags index="SuppressAttack" value="1"/>
             <StateFlags index="SuppressCombat" value="1"/>
         </Modification>
-        <Cost>
-            <Vital index="Energy" value="0"/>
-        </Cost>
     </CBehaviorBuff>
     <CBehaviorBuff id="TowerDISABLED" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TowerDISABLED"/>
@@ -114,21 +114,27 @@
             <DamageTotalMultiplier index="NoProc" value="-1"/>
             <AbilLinkDisableArray value="PrologueVoidArmor2"/>
         </Modification>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProductionDMY8" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TimeWarpProductionDMY8"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY8"/>
         <Modification TimeScale="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProductionDMY" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TimeWarpProductionDMY"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY"/>
         <Modification TimeScale="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProduction8" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TimeWarpProduction8"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProduction8"/>
         <Modification TimeScale="8"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoodooShield">
         <Duration value="0"/>

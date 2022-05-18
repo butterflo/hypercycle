@@ -4,6 +4,7 @@
 <Asset path="mission accepted.ogg" Type="Sound"/>
 <Asset path="assets\textures\ui_loadingbar_metalframe_teran.dds" Type="Image"/>
 <Asset path="breaking it.ogg" Type="Sound"/>
+<Asset path="assets\textures\blank.dds" Type="Image"/>
 <Asset path="assets\textures\ui_loadingbar_metalframe_protoss.dds" Type="Image"/>
 <Asset path="entering the atmosphere.ogg" Type="Sound"/>
 <Asset path="can i overcome.ogg" Type="Sound"/>
@@ -15,7 +16,6 @@
 <Actor id="TarsonisArrow"/>
 <Behavior id="TimeWarpProduction"/>
 <Behavior id="VoodooShield"/>
-<Behavior id="PurifierPlanetCracker"/>
 <Behavior id="DamageUP"/>
 <Behavior id="OverloadPenalty"/>
 <Behavior id="TowerDISABLED"/>
@@ -26,27 +26,16 @@
 <Light id="ShakurasCity"/>
 <Light id="KorhalCityEx2"/>
 <Light id="ShadowCorpsPlatform"/>
-<Model id="SOA_Beam"/>
-<Model id="LavaSplash"/>
-<Model id="LavaSplashBig"/>
-<Model id="SmokePillarsTall"/>
-<Model id="MothershipWarpIn"/>
-<Model id="FireSuppressionBots"/>
 <Model id="ArtanisVortexModel"/>
-<Model id="ZeratulStunModel"/>
-<Model id="KerriganApocalypseChannel"/>
 <Model id="NovaGadgetPulseGrenadesAttackImpact"/>
-<Model id="Warp100"/>
 <Model id="Warp100Huge"/>
 <Model id="Warp25Huge"/>
-<Model id="Warp400"/>
 <Model id="Warp400Huge"/>
 <Sound id="Battlecruiser_YamatoAttackChargeUp"/>
 <Sound id="Ghost_EMPAttackLaunch" Variations="0"/>
 <Sound id="Doodad_UmojanLabAlarms" Variations="0"/>
 <Sound id="UI_Bnet_MatchCountdown1"/>
 <Sound id="UI_BnetCountdown" Variations="0"/>
-<Sound id="TTychus05MusicEventB"/>
 <Sound id="UI_Horner05sTerminalButton"/>
 <Sound id="UI_ScoreScreenMissionName" Variations="0"/>
 <Sound id="UI_NavButtonSelect"/>
@@ -60,7 +49,6 @@
 <Sound id="TValerian03Adjutant00063"/>
 <Sound id="Event_Space02_CameraQuake"/>
 <Sound id="UI_Kerrigan_Abilities_EnergyBurst"/>
-<Sound id="UI_Nova_AuthenticationFadeIn"/>
 <Sound id="Nova_PulseGrenadeExplosion"/>
 <Sound id="CollectionBeam_ObjectFloatUp"/>
 <Sound id="AlarakPsionicOrbAttack" Variations="0"/>
@@ -95,7 +83,6 @@
 <Unit id="Sentry"/>
 <Unit id="Archon"/>
 <Unit id="ShieldBattery"/>
-<Unit id="Beacon_Zerg"/>
 <Unit id="Predator"/>
 <Unit id="PsiDisruptor"/>
 <Unit id="SJMercAATower"/>

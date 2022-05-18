@@ -274,8 +274,9 @@
         <Volume value="4.000000,4.000000"/>
     </CSound>
     <CSound id="SM_CS_Korhal01_Missile_Evaded_FlyBy">
+        <AssetArray index="0" Volume="2.000000,2.000000"/>
         <AssetArray index="1" removed="1"/>
-        <Category value="Music"/>
+        <Category value="Movie"/>
         <Pitch value="4.000000,4.000000"/>
         <ResourcePriority value="0"/>
         <SpeakerMix index="LFE" value="3.000000"/>
@@ -376,7 +377,8 @@
     </CSound>
     <CSound id="TTychus05MusicEventB">
         <Mode value="3DWorld"/>
-        <Volume value="0.000000,0.000000"/>
+        <Volume value="6.000000,6.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\Area_Alarm_Lp_06.wav"/>
     </CSound>
     <CSound id="TValerian02BAdjutant00017">
         <Category value="Movie"/>

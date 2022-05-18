@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CAbilAttack id="AttackAllowsInvulnerable">
         <AcquireFilters value="-;Player,Ally,Neutral,Psionic,Dead,Hidden,Benign"/>
@@ -13,7 +13,7 @@
     </CAbilEffectTarget>
     <CAbilEffectInstant id="EnergyNova">
         <Cost index="0">
-            <Cooldown Link="Abil/Supernova" TimeUse="0"/>
+            <Cooldown TimeUse="0"/>
         </Cost>
     </CAbilEffectInstant>
     <CAbilResearch id="ForgeResearch">
@@ -22,11 +22,6 @@
             <Resource index="Vespene" value="0"/>
             <Button Requirements="LearnProtossShield2"/>
         </InfoArray>
-        <InfoArray index="Research4" Time="1024" Upgrade="ProtossAirWeaponsLevel1">
-            <Resource index="Minerals" value="0"/>
-            <Resource index="Vespene" value="0"/>
-            <Button DefaultButtonFace="ProtossAirWeaponsLevel1" Requirements="LearnProtossShield3"/>
-        </InfoArray>
         <InfoArray index="Research7" Time="64">
             <Resource index="Minerals" value="0"/>
             <Resource index="Vespene" value="0"/>
@@ -34,16 +29,10 @@
         <InfoArray index="Research8">
             <Button Requirements=""/>
         </InfoArray>
-        <InfoArray index="Research10" Time="16" Upgrade="haltech4">
-            <Button DefaultButtonFace="ForceField2" State="Restricted" Requirements="LearnInterceptorLaunchSpeedUpgrade"/>
-        </InfoArray>
         <InfoArray index="Research11" Time="256" Upgrade="NeosteelFrame">
             <Button DefaultButtonFace="ResearchNeosteelFrame" Requirements="LearnNeosteelFrame">
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
-        </InfoArray>
-        <InfoArray index="Research12" Time="256" Upgrade="TerranInfantryWeaponsLevel1">
-            <Button DefaultButtonFace="TerranInfantryWeaponsLevel1" State="Restricted" Requirements="LearnTerranInfantryWeapon1"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectInstant id="GuardianShield">
@@ -57,7 +46,7 @@
                 <CountUse value="1"/>
                 <HideCount value="1"/>
             </Charge>
-            <Cooldown Link="GuardianShield" TimeUse="0"/>
+            <Cooldown TimeUse="0"/>
         </Cost>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;-"/>
@@ -65,7 +54,6 @@
     <CAbilEffectInstant id="MedivacSpeedBoost">
         <Flags index="Transient" value="0"/>
         <Cost index="0">
-            <Vital index="Energy" value="0"/>
             <Cooldown TimeStart="4" TimeUse="4"/>
         </Cost>
     </CAbilEffectInstant>
@@ -79,7 +67,7 @@
     <CAbilEffectInstant id="PrologueVoidArmor">
         <Effect index="0" value="ApplyDAMAGEUP"/>
         <Cost index="0">
-            <Cooldown Link="Abil/PrologueZeratulVoidArmor" TimeUse="0"/>
+            <Cooldown TimeUse="0"/>
         </Cost>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="PrologueVoidArmor2">
@@ -160,7 +148,7 @@
         <Flags index="Transient" value="0"/>
         <Cost index="0">
             <Vital index="Life" value="0"/>
-            <Cooldown Link="Abil/Stimpack" TimeUse="0.25"/>
+            <Cooldown TimeUse="0.25"/>
         </Cost>
         <TargetFilters value="Self;Ally,Neutral,Enemy"/>
         <AutoCastAcquireLevel value="Defensive"/>

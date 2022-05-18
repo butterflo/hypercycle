@@ -13,7 +13,7 @@
         <ScaleMin value="16.000000,16.000000,16.000000"/>
     </CModel>
     <CModel id="Banshee">
-        <Model value="Assets\Units\Terran\Banshee_Umojan\Banshee_Umojan.m3"/>
+        <Model value="Assets\Units\Terran\BattlecruiserHyperion\BattlecruiserHyperion.m3"/>
     </CModel>
     <CModel id="BattlecruiserYamatoAttackImpact">
         <Model value="Assets\Effects\Protoss\SOA_OrbitalStrike_Impact_Karax\SOA_OrbitalStrike_Impact_Karax.m3"/>

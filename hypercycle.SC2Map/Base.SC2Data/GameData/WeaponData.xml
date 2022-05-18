@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CWeaponLegacy id="ATSLaserBattery">
         <Options index="DisplayCooldown" value="1"/>
@@ -64,8 +64,8 @@
         <Icon value="Assets\Textures\btn-ability-protoss-purify.dds"/>
         <DisplayAttackCount value="1"/>
         <MinScanRange value="0"/>
-        <Range value="16"/>
-        <Period value="16"/>
+        <Range value="64"/>
+        <Period value="8"/>
         <Backswing value="0"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
@@ -102,7 +102,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="0"/>
         <Range value="32"/>
-        <Period value="0.125"/>
+        <Period value="0.25"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
         <Options index="LinkedCooldown" value="0"/>

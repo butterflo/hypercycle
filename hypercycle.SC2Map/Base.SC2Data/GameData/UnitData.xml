@@ -24,47 +24,6 @@
         <RankDisplay value="Never"/>
         <Attributes index="Armored" value="1"/>
     </CUnit>
-    <CUnit id="Archon">
-        <FlagArray index="AISplash" value="1"/>
-        <FlagArray index="AIHighPrioTarget" value="1"/>
-        <FlagArray index="AIFleeDamageDisabled" value="1"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Psionic" value="0"/>
-        <Attributes index="Massive" value="0"/>
-        <LifeStart value="11"/>
-        <LifeMax value="11"/>
-        <ShieldsStart value="0"/>
-        <ShieldsMax value="0"/>
-        <ShieldRegenDelay value="0"/>
-        <ShieldRegenRate value="0"/>
-        <Speed value="25"/>
-        <Sight value="8"/>
-        <Food value="0"/>
-        <AbilArray index="3" Link="AttackAllowsInvulnerable"/>
-        <AbilArray index="4" removed="1"/>
-        <AbilArray index="5" removed="1"/>
-        <AbilArray index="6" removed="1"/>
-        <BehaviorArray index="0" removed="1"/>
-        <BehaviorArray index="1" removed="1"/>
-        <BehaviorArray index="2" removed="1"/>
-        <WeaponArray index="0" Link="VolatileBurst"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="5" Face="AttackAllowsInvulnerable" AbilCmd="AttackAllowsInvulnerable,Execute" Row="1"/>
-        </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <ScoreKill value="0"/>
-        <MinimapRadius value="0.375"/>
-        <Collide index="ForceField" value="1"/>
-        <Acceleration value="800"/>
-        <ShieldDamageRatio value="1024"/>
-        <KillDisplay value="Never"/>
-        <RankDisplay value="Never"/>
-        <LateralAcceleration value="800"/>
-        <StationaryTurningRate value="1440"/>
-        <TurningRate value="1440"/>
-    </CUnit>
     <CUnit id="Baneling">
         <LifeStart value="4"/>
         <LifeMax value="4"/>
@@ -210,7 +169,7 @@
         <Collide index="Flying" value="0"/>
         <Attributes index="Psionic" value="1"/>
         <Attributes index="Structure" value="1"/>
-        <Speed value="150"/>
+        <Speed value="160"/>
         <Acceleration value="1000"/>
         <Height value="1.5"/>
         <BehaviorArray index="0" Link="TimeScale10"/>
@@ -400,40 +359,6 @@
         <AbilArray Link="PrologueVoidArmor"/>
         <AbilArray Link="PrologueVoidArmor2"/>
     </CUnit>
-    <CUnit id="Predator">
-        <FlagArray index="AISplash" value="1"/>
-        <FlagArray index="AIHighPrioTarget" value="1"/>
-        <FlagArray index="AIFleeDamageDisabled" value="1"/>
-        <Attributes index="Armored" value="0"/>
-        <Attributes index="Biological" value="1"/>
-        <Attributes index="Mechanical" value="0"/>
-        <LifeStart value="7"/>
-        <LifeMax value="7"/>
-        <LifeArmor value="0"/>
-        <Speed value="25"/>
-        <Sight value="8"/>
-        <Food value="0"/>
-        <AbilArray index="0" Link="stop"/>
-        <AbilArray index="1" Link="attack"/>
-        <AbilArray index="2" Link="move"/>
-        <AbilArray Link="AttackAllowsInvulnerable"/>
-        <WeaponArray index="0" Link="VolatileBurst"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="6" Face="AttackAllowsInvulnerable" Type="AbilCmd" AbilCmd="AttackAllowsInvulnerable,Execute" Row="1" Column="4"/>
-        </CardLayouts>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
-        <InnerRadius value="0.375"/>
-        <ScoreMake value="0"/>
-        <ScoreKill value="0"/>
-        <MinimapRadius value="0.375"/>
-        <Acceleration value="800"/>
-        <ShieldDamageRatio value="1024"/>
-        <KillDisplay value="Never"/>
-        <RankDisplay value="Never"/>
-        <StationaryTurningRate value="1440"/>
-        <TurningRate value="1440"/>
-    </CUnit>
     <CUnit id="PsiDisruptor">
         <FlagArray index="UseLineOfSight" value="0"/>
         <FlagArray index="Invulnerable" value="1"/>
@@ -492,9 +417,10 @@
             <LayoutButtons index="3" Face="PrologueVoidArmor" Type="AbilCmd" AbilCmd="PrologueVoidArmor,Execute" Requirements=""/>
             <LayoutButtons Face="PrologueVoidArmor2" Type="AbilCmd" AbilCmd="PrologueVoidArmor2,Execute" Row="2" Column="1"/>
         </CardLayouts>
-        <Footprint value="Footprint2x2"/>
+        <Footprint value="Footprint1x1"/>
         <ScoreMake value="0"/>
         <ScoreKill value="0"/>
+        <PlacementFootprint value="Footprint1x1"/>
         <!--EnergyStart value="50"/>
         <EnergyMax value="200"/>
         <EnergyRegenRate value="0.5625"/>
