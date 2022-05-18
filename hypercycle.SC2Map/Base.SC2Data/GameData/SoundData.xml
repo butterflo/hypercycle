@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="AlarakPsionicOrbAttack">
+        <AssetArray index="0" File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_FinalCountDownPowerup1.wav" Volume="6.000000,6.000000"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <Category value="Movie"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="2"/>
+        <Mode value="2D"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="ArmoryDropShip_Work">
+        <Category value="UIMovie"/>
+        <Pitch value="-4.000000,-4.000000"/>
+    </CSound>
+    <CSound id="ArmoryDropship_CloseHatchBottom">
+        <Category value="UIMovie"/>
+    </CSound>
+    <CSound id="Banshee_AttackLaunch2">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\PhasePrism\PhasePrism_Pissed00.ogg"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Battlecruiser_YamatoAttackImpact">
+        <AssetArray index="0" File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixDeath0.wav" Pitch="0.000000,0.000000"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeDestroyCount value="16"/>
+        <DupeMuteCount value="16"/>
+        <Pitch value="16.000000,24.000000"/>
+    </CSound>
+    <CSound id="Battlecruiser_YamatoAttackLaunch">
+        <Category value="Combat"/>
+        <AssetArray index="0" File="Assets\Sounds\Terran\DropPod\DropPod_Drop0.wav"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00005">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00042">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00043">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00044">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00077">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00079">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="ChallengescombinedAdjutant00101">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="Core_Transport">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="DeviceAccel1" parent="Foley">
+        <AssetArray index="0" File="Assets\Sounds\Uni\Foley\ArmoryBanshee_Stand_Work.wav"/>
+        <Flags index="Stream" value="1"/>
+        <Category value="UIMovie"/>
+        <Pitch value="4.000000,4.000000"/>
+        <Volume value="0.000000,0.000000"/>
+        <VolumeRolloffFadeBlend value="Linear"/>
+        <VolumeRolloffPoints Distance="6.000000"/>
+        <VolumeRolloffPoints Distance="13.000000" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="DeviceAccel2" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge1.wav"/>
+        <Category value="UIMovie"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="DeviceAccel3" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge1.wav"/>
+        <Category value="UIMovie"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="7.000000,7.000000"/>
+    </CSound>
+    <CSound id="DeviceAccel4" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_PowerUpLarge1.wav"/>
+        <Category value="UIMovie"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="11.000000,11.000000"/>
+    </CSound>
+    <CSound id="DeviceAccelFinal" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Purifier\Purifier_PlanetCracker0.wav"/>
+        <Category value="UIMovie"/>
+        <Pitch value="-16.000000,-16.000000"/>
+    </CSound>
+    <CSound id="DiamondbackAttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Mothership\Mothership_WormholeTransitEnd0.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\Mothership\Mothership_WormholeTransitStart0.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\Mothership\Mothership_BeamAttackLaunch0.wav" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Protoss\Mothership\Mothership_BeamAttackLaunch1.wav" FacialGroup=""/>
+        <Pitch value="8.000000,8.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Doodad_UmojanLabAlarms">
+        <Category value="Movie"/>
+        <LoopCount value="0"/>
+        <Mode value="2D"/>
+        <Pitch value="-2.000000,-2.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Ghost_EMPAttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_MatchCountdown1.ogg" FacialGroup=""/>
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="0.000000,0.000000"/>
+        <Pitch value="0.000000,4.000000"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="2"/>
+    </CSound>
+    <CSound id="Ghost_NukeExplode">
+        <Pitch value="-16.000000,-16.000000"/>
+    </CSound>
+    <CSound id="HybridABirth">
+        <Category value="Music"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Marauder_AttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_01.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_02.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_03.wav" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_04.wav" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_B_01.wav" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_B_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_B_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_B_04.wav" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+        <Pitch value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Mission_End_2D_Nuke_Explosion">
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="Mothership_AttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\VoidShard_Zone_Launch_01.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\VoidShard_Zone_Launch_01a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\VoidShard_Zone_Launch_01b.wav" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="Mothership_VortexEnd">
+        <Pitch value="16.000000,16.000000"/>
+    </CSound>
+    <CSound id="Mothership_VortexLoop">
+        <Pitch value="16.000000,16.000000"/>
+    </CSound>
+    <CSound id="Mothership_VortexStart">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Gateway\Gateway_MorphToWarpGate0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Gateway\Gateway_MorphToWarpGate1.wav" FacialGroup=""/>
+        <Pitch value="16.000000,16.000000"/>
+    </CSound>
+    <CSound id="Nova_PulseGrenadeExplosion">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="OdinBuild_Clunk">
+        <Category value="Movie"/>
+        <Mode value="3DHead"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="PhotonCannon_AttackLaunch">
+        <AssetArray index="0" File="plasma\plasmx1a.wav" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <Volume value="3.000000,3.000000"/>
+        <DupeDestroyCount value="32"/>
+        <DupeMuteCount value="30"/>
+    </CSound>
+    <CSound id="PlanetaryFortress_AttackLaunch">
+        <Category value="Movie"/>
+        <Pitch value="-4.000000,-4.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Probe_AttackLaunch">
+        <Volume value="3.000000,3.000000"/>
+        <AssetArray index="0" File="Assets\Sounds\HybridThrasher_ImpactElectric_01.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\HybridThrasher_ImpactElectric_02.wav"/>
+        <AssetArray index="2" File="Assets\Sounds\HybridThrasher_ImpactElectric_03.wav"/>
+        <AssetArray index="3" File="Assets\Sounds\HybridThrasher_ImpactElectric_04.wav"/>
+        <AssetArray index="4" removed="1"/>
+    </CSound>
+    <CSound id="PrologueVoidArmorLaunchSound">
+        <AssetArray index="0" File="Assets\Sounds\UI_SoA_ChargePower_Click01_2ch.wav" Volume="6.000000,6.000000"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <Category value="Combat"/>
+        <Mode value="2D"/>
+        <Volume value="6.000000,6.000000"/>
+        <DupeDestroyCount value="64"/>
+        <DupeMuteCount value="64"/>
+    </CSound>
+    <CSound id="Pylon_Containment_Unit_Power_Down">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="0.000000,0.000000"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="2"/>
+    </CSound>
+    <CSound id="QuadBGM1">
+        <AssetArray File="Mission Accepted.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="QuadBGM2">
+        <AssetArray File="Can I Overcome.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="QuadBGM3">
+        <AssetArray File="Breaking It.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="QuadBGM3X">
+        <AssetArray File="Two Dimensions.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="QuadBGM4X">
+        <AssetArray File="Spaceships Can Drift Too.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+    </CSound>
+    <CSound id="QuadBGM4">
+        <AssetArray File="Entering the Atmosphere.ogg" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+    </CSound>
+    <CSound id="RoboticsFacility_Karax_PowerDN">
+        <AssetArray index="0" File="Assets\Sounds\Shakuras_Vault_ObjectFloat_Up01.wav"/>
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="SM_CS_Korhal01_Missile_Evaded_FlyBy">
+        <AssetArray index="1" removed="1"/>
+        <Category value="Music"/>
+        <Pitch value="4.000000,4.000000"/>
+        <ResourcePriority value="0"/>
+        <SpeakerMix index="LFE" value="3.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="SiegeBreaker_MorphToSiege">
+        <Category value="Movie"/>
+        <Pitch value="-12.000000,-12.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="SiegeBreaker_MorphToTank">
+        <Category value="Movie"/>
+        <Pitch value="-8.000000,-8.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="TValerian03Kerrigan00046">
+        <Category value="Movie"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="Terran_BuildingLand">
+        <Category value="Movie"/>
+        <Mode value="3DHead"/>
+        <Volume value="1.000000,1.000000"/>
+    </CSound>
+    <CSound id="Tosh_ConsumptionImpact">
+        <AssetArray index="0" removed="1"/>
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="UI_BnetCountdown">
+        <Pitch value="1.000000,1.000000"/>
+        <!-- <DupeDestroyCount value="1"/>
+        <DupeMuteCount value="1"/>
+        <DupeRepeatCount value="1"/>
+        <OverlapPitchDelta value="0.000000"/>
+        <OverlapTimeDelta value="0"/> -->
+    </CSound>
+    <CSound id="UI_BnetCountdownBeep">
+        <AssetArray index="0" File="eva_beep.wav" Volume="2.000000,2.000000"/>
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <LoopCount value="-1"/>
+    </CSound>
+    <CSound id="UI_Kerrigan_Abilities_EnergyBurst">
+        <Category value="Movie"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="UI_Nova_AuthenticationInputCaretBlink"/>
+    <CSound id="UI_TransmissionText">
+        <LoopCount value="1"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="UI_Void_Bleep_1">
+        <Category value="Movie"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="VoidChasm_DeathSweetener">
+        <AssetArray index="0" Volume="3.000000,3.000000"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="WaveComplete">
+        <AssetArray File="buzzer.wav" FacialGroup=""/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Movie"/>
+        <Mode value="3DHead"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Sentry_ForceFieldLaunch">
+        <Volume value="-16.000000,-16.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_AttackLaunch">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="SiegeTank_MorphToTank">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackImpact">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <Pitch value="-8.000000,-4.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackLaunch">
+        <Category value="Movie"/>
+        <Mode value="2D"/>
+        <AssetArray index="4" File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch6.wav"/>
+        <AssetArray index="5" File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch7.wav"/>
+        <AssetArray index="6" File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch8.wav"/>
+        <AssetArray index="7" File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch9.wav"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="TTychus05MusicEventA">
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="TTychus05MusicEventB">
+        <Mode value="3DWorld"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="TValerian02BAdjutant00017">
+        <Category value="Movie"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="TValerian03Adjutant00063">
+        <Category value="Movie"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="UI_Bnet_MatchCountdown1">
+        <Flags index="Ignorable" value="0"/>
+    </CSound>
+    <CSound id="UI_KerriganUpgrades_Enter">
+        <Category value="Movie"/>
+        <Volume value="0.000000,1.000000"/>
+    </CSound>
+    <CSound id="UI_MissionScreen_SelectPlanet">
+        <Flags index="Ignorable" value="0"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="UI_ResourcePickup">
+        <Category value="Movie"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="UI_Starmap_ZoomIn">
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="VoidSeeker_AttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Mothership\Mothership_WarpIn.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\Mothership\Mothership_BeamAttackLaunch0.wav"/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\Mothership\Mothership_BeamAttackLaunch1.wav"/>
+        <DupeDestroyCount value="64"/>
+        <DupeMuteCount value="64"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="WidowMine_ArmedBeep">
+        <AssetArray index="0" LoopCount="3"/>
+        <Category value="Movie"/>
+        <Chance value="100"/>
+        <Mode value="2D"/>
+        <Pitch value="-1.000000,-1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="zMission_Lab02_Valerian_065">
+        <Category value="Movie"/>
+    </CSound>
+    <CSound id="zSMAmbient_Stukov_Stukov_004">
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="zSMAmbient_Stukov_Stukov_014">
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <Volume value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="zSMAmbient_Stukov_Stukov_015">
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <Volume value="1.000000,3.000000"/>
+    </CSound>
+    <CSound id="zSM_EvolutionMaster_EvolutionMaster_038">
+        <Category value="Movie"/>
+        <Volume value="1.000000,1.000000"/>
+    </CSound>
+    <CSound id="zSM_EvolutionMaster_EvolutionMaster_109">
+        <Category value="Movie"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="zSM_Stukov_Stukov_075">
+        <Category value="Movie"/>
+        <Mode value="3DWorld"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="zUnit_HeroStukov_Stukov_022">
+        <Category value="Movie"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+</Catalog>

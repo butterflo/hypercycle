@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="ConsolePanel" name="GameUI/UIContainer/ConsolePanel" file="GameUI">
+        <Frame type="Model" name="InfopanelModel">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Model" name="MinimapModel">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Frame" name="InfoStub">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="PortraitPanel" name="PortraitPanel">
+            <Anchor side="Bottom" relative="$parent" pos="Min" offset="-500"/>
+        </Frame>
+
+        <Frame type="Model" name="CommandPanelModel">
+            <Visible val="false"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="GameUI" name="GameUI" file="GameUI">
+        <ConsoleWorldBottomOffset val="0"/>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+        <Frame type="GameMessageDisplay" name="ChatDisplay">
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-200"/>
+            <MaxMessages val="8"/>
+            <MessageDuration val="8000"/>
+            <FadeDuration val="100"/>
+            <Height val="256"/>
+        </Frame>
+
+        <Frame type="MessageDisplay" name="ErrorDisplay">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="ChatBar" name="ChatBar">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-50"/>
+        </Frame>
+
+        <Frame type="ResourcePanel" name="ResourcePanel">
+            <Frame type="ResourceFrame" name="ResourceFrame">
+                <Frame type="CountdownLabel" name="ResourceLabel0">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="9"/>
+                    <CountdownTime val="150"/>
+                    <Style val="STconsole"/>
+                    <Width val="140"/>
+                </Frame>
+
+                <Frame type="CountdownLabel" name="ResourceLabel1">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="9"/>
+                    <CountdownTime val="150"/>
+                    <Style val="STconsole"/>
+                    <Width val="140"/>
+                </Frame>
+
+                <Frame type="CountdownLabel" name="ResourceLabel2">
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="9"/>
+                    <CountdownTime val="150"/>
+                    <Style val="STconsole"/>
+                    <Width val="140"/>
+                </Frame>
+            </Frame>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
+
+        <Frame type="InfoPanel" name="InfoPanel">
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="-595"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="385"/>
+            <Unclipped val="true"/>
+
+            <Frame type="Frame" name="UnitPanel">
+                <Frame type="BehaviorBar" name="BehaviorBar">
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="60"/>
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="16"/>
+                </Frame>
+                <Frame type="Label" name="ShieldLabel">
+                    <Style val="STconsoleSmallCenter"/>
+                    <Width val="200"/>
+                </Frame>
+                <Frame type="Label" name="LifeLabel">
+                    <Style val="STconsoleSmallCenter"/>
+                    <Width val="200"/>
+                </Frame>
+                <Frame type="UnitWireframe" name="UnitWireframe">
+                    <Width val="96"/>
+                    <Height val="96"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="InfoPaneUnit" name="InfoPaneUnit">
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-200"/>
+                <Frame type="Label" name="NameLabel">
+                    <Style val="STconsole"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="-143"/>
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="20"/>
+                </Frame>
+                <Frame type="Label" name="TypeLabel">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="InfoPaneProgress" name="InfoPaneProgress">
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-200"/>
+
+                <Frame type="Label" name="NameLabel">
+                    <Style val="STconsole"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="-143"/>
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="20"/>
+                </Frame>
+                <Frame type="Label" name="TypeLabel">
+                    <Visible val="false"/>
+                </Frame>
+
+                <Frame type="Frame" name="ProgressContainer">
+                    <Anchor side="Top" relative="$parent/NameLabel" pos="Max" offset="15"/>
+                    <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+                    <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                    <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+                    <Width val="196"/>
+                    <Height val="64"/>
+
+                    <Frame type="ProgressButton" name="ProgressButton">
+                        <Anchor side="Left" relative="$parent" pos="Min" offset="-200"/>
+                    </Frame>
+
+                    <Frame type="ProgressBar" name="ProgressBar">
+                        <Width val="512"/>
+                        <Height val="16"/>
+                        <Texture val="@@UI/ProgressQueue"/>
+                        <FillInset val="0"/>
+                    </Frame>
+                </Frame>
+            </Frame>
+
+            <Frame type="InfoPaneQueue" name="InfoPaneQueue">
+                <Anchor side="Right" relative="$parent" pos="Max" offset="-200"/>
+
+                <Frame type="Label" name="NameLabel">
+                    <Style val="STconsole"/>
+                    <Anchor side="Left" relative="$parent" pos="Min" offset="-143"/>
+                    <Anchor side="Top" relative="$parent" pos="Min" offset="20"/>
+                </Frame>
+                <Frame type="Label" name="TypeLabel">
+                    <Visible val="false"/>
+                </Frame>
+
+                <Frame type="Frame" name="QueuePanel">
+                    <Width val="196"/>
+                    <Height val="64"/>
+
+                    <Frame type="ActiveQueuePanel" name="ActiveQueuePanel00">
+                        <Width val="196"/>
+                        <Height val="64"/>
+
+                        <Frame type="QueueButton" name="QueueButton">
+                            <Anchor side="Left" relative="$parent" pos="Min" offset="-200"/>
+                        </Frame>
+
+                        <Frame type="ProgressBar" name="ProgressBar">
+                            <Width val="512"/>
+                            <Height val="16"/>
+                            <Texture val="@@UI/ProgressQueue"/>
+                            <FillInset val="0"/>
+                        </Frame>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="ControlGroupPanel" name="ControlGroupPanel">
+            <Anchor side="Right" relative="$parent/InfoPanel" pos="-1" offset="0"/>
+        </Frame>
+
+        <Frame type="MinimapPanel" name="MinimapPanel">
+            <Visible val="false"/>
+
+            <Frame type="Minimap" name="Minimap">
+                <Visible val="false"/>
+            </Frame>
+
+            <Frame type="Button" name="ColorButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="Button" name="PingButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="Button" name="TerrainButton">
+                <Visible val="false"/>
+
+                <Frame type="Image" name="Icon">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+        </Frame>
+
+        <Frame type="CommandPanel" name="CommandPanel">
+            <Width val="320"/>
+            <Height val="192"/>
+            <Frame type="CommandTooltip" name="CommandTooltip">
+                <Frame type="Label" name="ResourceLabel0">
+                    <Width val="150"/>
+                </Frame>
+                <Frame type="Label" name="ResourceLabel1">
+                    <Width val="150"/>
+                </Frame>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton00">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton01">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton02">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton03">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton04">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton05">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton06">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton07">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton08">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton09">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton10">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton11">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton12">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton13">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+            <Frame type="CommandButton" name="CommandButton14">
+                <Width val="64"/>
+                <Height val="64"/>
+            </Frame>
+
+        </Frame>
+
+    </Frame>
+</Desc>

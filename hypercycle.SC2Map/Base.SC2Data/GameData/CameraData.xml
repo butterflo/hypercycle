@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CCamera id="Dflt">
+        <ParamInitial index="FieldOfView" value="30.000000"/>
+        <ParamInitial index="Distance" value="45.000000"/>
+        <ZoomTable index="0" removed="1"/>
+        <ZoomTable index="1" removed="1"/>
+        <ZoomTable index="2" removed="1"/>
+        <ZoomTable index="3" removed="1"/>
+        <ZoomTable index="4" removed="1"/>
+        <HeightDisplacementFactor value="0.000000"/>
+    </CCamera>
+</Catalog>

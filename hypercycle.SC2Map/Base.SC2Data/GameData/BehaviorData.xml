@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="DamageUP">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="64"/>
+        <Modification>
+            <DamageTotalMultiplier index="Spell" value="1"/>
+            <DamageTotalMultiplier index="Melee" value="1"/>
+            <DamageTotalMultiplier index="Ranged" value="1"/>
+            <DamageTotalMultiplier index="Splash" value="1"/>
+            <DamageTotalMultiplier index="NoProc" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DamageBASELINE">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <DamageTotalMultiplier index="Spell" value="-1"/>
+            <DamageTotalMultiplier index="Melee" value="-1"/>
+            <DamageTotalMultiplier index="Ranged" value="-1"/>
+            <DamageTotalMultiplier index="Splash" value="-1"/>
+            <DamageTotalMultiplier index="NoProc" value="-1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShield">
+        <DamageResponse>
+            <Kind index="Spell" value="1"/>
+            <ModifyAmount value="0"/>
+        </DamageResponse>
+        <Duration value="-1"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="SOATimeFreezeSearch"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacSpeedBoost">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisplayDuration index="Self" value="0"/>
+        <DisplayDuration index="Ally" value="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OrbitalDelay">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="8"/>
+        <Modification>
+            <StateFlags index="SuppressCombat" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PurifierPlanetCracker">
+        <Duration value="-1"/>
+        <Period value="0"/>
+        <InitialEffect value=""/>
+        <RefreshEffect value=""/>
+        <PeriodicEffect value=""/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PylonSummoningDummy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SOATimeFreeze">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="0.125"/>
+        <Modification TimeScale="0.125">
+            <StateFlags index="Stun" value="0"/>
+            <StateFlags index="SuppressAttack" value="0"/>
+            <StateFlags index="SuppressCloak" value="0"/>
+            <StateFlags index="SuppressDetection" value="0"/>
+            <StateFlags index="SuppressRadar" value="0"/>
+            <AbilClassDisableArray index="CAbilAttack" value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stimpack">
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TerranBuildingBurnDown">
+        <Period value="0.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeScale10">
+        <Duration value="100"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeWarpProduction">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <Modification TimeScale="4" AttackSpeedMultiplier="1">
+            <VitalRegenArray index="Energy" value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OverloadPenalty" parent="TimeWarpProduction">
+        <Name value="Behavior/Name/OverloadPenalty"/>
+        <Tooltip value="Behavior/Tooltip/OverloadPenalty"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-detectionconedebuff.dds"/>
+        <Modification TimeScale="1">
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCombat" value="1"/>
+        </Modification>
+        <Cost>
+            <Vital index="Energy" value="0"/>
+        </Cost>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TowerDISABLED" parent="TimeWarpProduction">
+        <Name value="Behavior/Name/TowerDISABLED"/>
+        <Tooltip value="Behavior/Tooltip/OverloadPenalty"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-detectionconedebuff.dds"/>
+        <Modification TimeScale="1">
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCombat" value="1"/>
+            <DamageTotalMultiplier index="Spell" value="-1"/>
+            <DamageTotalMultiplier index="Melee" value="-1"/>
+            <DamageTotalMultiplier index="Ranged" value="-1"/>
+            <DamageTotalMultiplier index="Splash" value="-1"/>
+            <DamageTotalMultiplier index="NoProc" value="-1"/>
+            <AbilLinkDisableArray value="PrologueVoidArmor2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeWarpProductionDMY8" parent="TimeWarpProduction">
+        <Name value="Behavior/Name/TimeWarpProductionDMY8"/>
+        <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY8"/>
+        <Modification TimeScale="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeWarpProductionDMY" parent="TimeWarpProduction">
+        <Name value="Behavior/Name/TimeWarpProductionDMY"/>
+        <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY"/>
+        <Modification TimeScale="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeWarpProduction8" parent="TimeWarpProduction">
+        <Name value="Behavior/Name/TimeWarpProduction8"/>
+        <Tooltip value="Behavior/Tooltip/TimeWarpProduction8"/>
+        <Modification TimeScale="8"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VoodooShield">
+        <Duration value="0"/>
+        <RemoveValidatorArray index="0" removed="1"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="0"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.5"/>
+        <DamageResponse ModifyMinimumDamage="0"/>
+    </CBehaviorBuff>
+</Catalog>

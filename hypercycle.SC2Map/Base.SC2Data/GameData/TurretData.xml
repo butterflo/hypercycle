@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTurret id="FreeRotate">
+        <YawRate value="1440"/>
+    </CTurret>
+    <CTurret id="PerditionTurret">
+        <YawRate value="1440"/>
+    </CTurret>
+    <CTurret id="PlanetaryFortress">
+        <YawRate value="720"/>
+        <YawIdleRate value="720"/>
+    </CTurret>
+    <CTurret id="ScienceVesselRotate">
+        <Idle value="Hold"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="0"/>
+    </CTurret>
+    <CTurret id="SiegeTank">
+        <Idle value="Hold"/>
+        <YawRate value="0.879"/>
+    </CTurret>
+    <CTurret id="SiegeTankSieged">
+        <YawRate value="2.8125"/>
+    </CTurret>
+</Catalog>

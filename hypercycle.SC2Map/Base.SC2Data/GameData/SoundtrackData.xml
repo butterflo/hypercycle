@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSoundtrack id="QuadOST1">
+        <CueArray>
+            <MasterLayer Sound="QuadBGM1"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <CueArray>
+            <MasterLayer Sound="QuadBGM2"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Select value="Sequential"/>
+        <Flags index="Continuous" value="0"/>
+    </CSoundtrack>
+</Catalog>

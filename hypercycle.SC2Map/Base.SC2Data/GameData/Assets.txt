@@ -1,0 +1,3 @@
+UI/ResourceIcon2_Zerg=Assets\Textures\icon-energy-minus.dds
+UI/ResourceIcon2_Terr=Assets\Textures\icon-energy-plus.dds
+UI/ProgressQueue=Assets\Textures\progress_queue_custom.dds

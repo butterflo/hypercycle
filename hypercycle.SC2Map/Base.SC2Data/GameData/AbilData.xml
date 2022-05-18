@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAbilAttack id="AttackAllowsInvulnerable">
+        <AcquireFilters value="-;Player,Ally,Neutral,Psionic,Dead,Hidden,Benign"/>
+    </CAbilAttack>
+    <CAbilTransport id="BunkerTransport">
+        <Flags index="CargoDeath" value="1"/>
+        <MaxCargoSize value="1"/>
+        <LoadCargoBehavior value=""/>
+    </CAbilTransport>
+    <CAbilEffectTarget id="EMP">
+        <TargetFilters value="-;Player,Stunned"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="EnergyNova">
+        <Cost index="0">
+            <Cooldown Link="Abil/Supernova" TimeUse="0"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilResearch id="ForgeResearch">
+        <InfoArray index="Research1" Time="256">
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Button Requirements="LearnProtossShield2"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="1024" Upgrade="ProtossAirWeaponsLevel1">
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Button DefaultButtonFace="ProtossAirWeaponsLevel1" Requirements="LearnProtossShield3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="64">
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+        </InfoArray>
+        <InfoArray index="Research8">
+            <Button Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="16" Upgrade="haltech4">
+            <Button DefaultButtonFace="ForceField2" State="Restricted" Requirements="LearnInterceptorLaunchSpeedUpgrade"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="256" Upgrade="NeosteelFrame">
+            <Button DefaultButtonFace="ResearchNeosteelFrame" Requirements="LearnNeosteelFrame">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research12" Time="256" Upgrade="TerranInfantryWeaponsLevel1">
+            <Button DefaultButtonFace="TerranInfantryWeaponsLevel1" State="Restricted" Requirements="LearnTerranInfantryWeapon1"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectInstant id="GuardianShield">
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <HideCount value="1"/>
+            </Charge>
+            <Cooldown Link="GuardianShield" TimeUse="0"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;-"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MedivacSpeedBoost">
+        <Flags index="Transient" value="0"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeStart="4" TimeUse="4"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilBehavior id="OracleWeapon">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <BehaviorArray index="0" value="TimeWarpProduction"/>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="PrologueVoidArmor">
+        <Effect index="0" value="ApplyDAMAGEUP"/>
+        <Cost index="0">
+            <Cooldown Link="Abil/PrologueZeratulVoidArmor" TimeUse="0"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="PrologueVoidArmor2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ApplyDAMAGEDN"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/PrologueZeratulVoidArmor"/>
+            <Cooldown Link="Abil/PrologueZeratulVoidArmor"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PrologueVoidArmor2"/>
+    </CAbilEffectInstant>
+    <CAbilBuild id="ProtossBuild">
+        <InfoArray index="Build1" Unit="XelNagaVault" Time="256"/>
+        <InfoArray index="Build2" Time="64"/>
+        <InfoArray index="Build6" Unit="ShieldBattery" Time="16">
+            <Button State="Available" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="4">
+            <Display index="Minerals" value="1"/>
+            <Button Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="Pylon" Time="8">
+            <Button DefaultButtonFace="SOAProxyPylon" State="Available" Requirements=""/>
+        </InfoArray>
+        <RefundFraction>
+            <Resource index="Minerals" value="-1"/>
+            <Resource index="Vespene" value="-1"/>
+            <Resource index="Terrazine" value="-1"/>
+            <Resource index="Custom" value="-1"/>
+        </RefundFraction>
+        <Range value="256"/>
+    </CAbilBuild>
+    <CAbilEffectInstant id="RageDischarge">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+        <Effect index="0" value="NukeDamage"/>
+        <Range value="16"/>
+        <RangeSlop value="0"/>
+        <AutoCastFilters value="-;-"/>
+        <CastIntroTime value="4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GhostAcademy"/>
+    </CAbilEffectInstant>
+    <CAbilTrain id="RoboticsFacilityTrain">
+        <InfoArray index="Train1" Time="4">
+            <Button DefaultButtonFace="Oracle" State="Available"/>
+            <Unit index="0" value="Oracle"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="16">
+            <Button State="Available"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="StarportTrain">
+        <InfoArray index="Train1" Time="16">
+            <Button DefaultButtonFace="BuildScienceVessel" State="Available"/>
+            <Unit index="0" value="ScienceVessel"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="64">
+            <Button DefaultButtonFace="SiegeTank" State="Available" Requirements=""/>
+            <Unit index="0" value="MengskSiegeTank"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilEffectInstant id="Stimpack">
+        <Effect index="0" value="ACCELToggleON"/>
+        <Cost index="0">
+            <Vital index="Life" value="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" State="Available" Requirements=""/>
+        <CmdButtonArray index="Cancel">
+            <Flags index="ShowInGlossary" value="1"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="StimpackMarauder">
+        <Effect index="0" value="PsiDisruptionSearchArea"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="0"/>
+        <Cost index="0">
+            <Vital index="Life" value="0"/>
+            <Cooldown Link="Abil/Stimpack" TimeUse="0.25"/>
+        </Cost>
+        <TargetFilters value="Self;Ally,Neutral,Enemy"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Self;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="1"/>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="SupplyDepotLower">
+        <AbilClassDisableArray index="CAbilQueue" value="0"/>
+    </CAbilMorph>
+    <CAbilBuild id="TerranBuild">
+        <FlagArray index="Interruptible" value="0"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="OrbitalCommand" Time="16">
+            <Button State="Restricted" Requirements="LearnTerranInfantryWeapon12"/>
+        </InfoArray>
+        <InfoArray index="Build7" Time="32">
+            <Button State="Available" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="128">
+            <Button State="Available" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build16" Time="16">
+            <Button State="Restricted" Requirements="LearnTerranInfantryWeapon12"/>
+        </InfoArray>
+        <InfoArray index="Build21" Time="64">
+            <Button State="Available" Requirements=""/>
+        </InfoArray>
+        <RefundFraction>
+            <Resource index="Minerals" value="-1"/>
+            <Resource index="Vespene" value="-1"/>
+            <Resource index="Terrazine" value="-1"/>
+            <Resource index="Custom" value="-1"/>
+        </RefundFraction>
+        <Range value="256"/>
+    </CAbilBuild>
+    <CAbilEffectInstant id="VoodooShield">
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge CountMax="1" CountStart="1" CountUse="1"/>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <AutoCastFilters value="Self,Visible;Ally,Neutral,Enemy"/>
+        <CmdButtonArray index="Execute" State="Available"/>
+    </CAbilEffectInstant>
+    <CAbilBehavior id="WraithCloak">
+        <CmdButtonArray index="On" DefaultButtonFace="OracleCloakingFieldTargeted"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="WraithCloakOff"/>
+        <Flags index="ToggledOn" value="1"/>
+        <Flags index="Transient" value="0"/>
+        <Cost index="0">
+            <Resource index="Vespene" value="-256"/>
+            <Display index="Vespene" value="1"/>
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <OffCost>
+            <Resource index="Vespene" value="256"/>
+            <Display index="Vespene" value="1"/>
+            <Charge Link="Abil/WraithCloak"/>
+            <Cooldown Link="Abil/WraithCloak"/>
+        </OffCost>
+        <BehaviorArray index="0" value="VoodooShield"/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="ZeratulBlink">
+        <Cost index="0">
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Blink"/>
+        <Range index="0" value="250"/>
+    </CAbilEffectTarget>
+    <CAbilQueue id="que5">
+        <QueueSize value="4"/>
+    </CAbilQueue>
+</Catalog>

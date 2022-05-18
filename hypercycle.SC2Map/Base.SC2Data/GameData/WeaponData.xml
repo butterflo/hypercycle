@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CWeaponLegacy id="ATSLaserBattery">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <DisplayEffect value="YamatoU"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="16"/>
+        <Period value="16"/>
+        <Effect value="Yamato"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeSlop value="0"/>
+        <ArcSlop value="0"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Diamondback">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
+        <DisplayAttackCount value="16"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="0.5"/>
+        <Effect value="PurifierPlanetCrackerSearch"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <MinScanRange value="0"/>
+        <RangeSlop value="0"/>
+        <ArcSlop value="0"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SupershieldWeapon">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-building-terran-sigmaprojector.dds"/>
+        <DisplayEffect value="ConsumptionDamage"/>
+        <TargetFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="4"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <ArcSlop value="0"/>
+        <Period value="0.5"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="PsiDisruptionSearchArea"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MothershipBeam">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-purify.dds"/>
+        <DisplayAttackCount value="1"/>
+        <MinScanRange value="0"/>
+        <Range value="16"/>
+        <Period value="16"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeSlop value="0"/>
+        <ArcSlop value="0"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <Options index="DisplayCooldown" value="1"/>
+        <MinScanRange value="0"/>
+        <Range value="16"/>
+        <Period value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <Marker Duration="0.5">
+            <MatchFlags index="Link" value="1"/>
+        </Marker>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <ArcSlop value="0"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolatileBurst">
+        <TargetFilters value="Visible;Self,Player,Ally,Missile,Dead,Hidden"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeSlop value="0"/>
+        <ArcSlop value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PunisherGrenades">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="0"/>
+        <Range value="32"/>
+        <Period value="0.125"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <RangeSlop value="0"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <Arc value="360"/>
+        <ArcSlop value="0"/>
+        <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+    </CWeaponLegacy>
+</Catalog>

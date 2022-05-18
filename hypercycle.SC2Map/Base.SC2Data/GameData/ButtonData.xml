@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="Blink">
+        <EditorCategories value=""/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-blink-zeratul.dds"/>
+        <HotkeySet value="QuadDefense"/>
+        <Hotkey value="Button/Hotkey/BTNB"/>
+    </CButton>
+    <CButton id="Bunker">
+        <EditorCategories value=""/>
+        <Hotkey value="Button/Hotkey/BunkerHK"/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="CommandCenterOrbRelay">
+        <Icon value="Assets\Textures\btn-doodad-spaceordinancetower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-doodad-spaceordinancetower.dds"/>
+        <Hotkey value="Button/Hotkey/BTNS"/>
+    </CButton>
+    <CButton id="FleetBeacon">
+        <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <Hotkey value="Button/Hotkey/BTNE"/>
+        <EditorCategories value=""/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="OracleWeaponOff">
+        <Icon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="OracleWeaponOn">
+        <Icon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
+    </CButton>
+    <CButton id="PhotonCannon">
+        <Hotkey value="Button/Hotkey/BTNQ"/>
+        <EditorCategories value=""/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="PrologueVoidArmor">
+        <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+    </CButton>
+    <CButton id="PrologueVoidArmor2">
+        <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="ProtossBuild">
+        <Icon value="Assets\Textures\btn-upgrade-karax-pylonwarpininstantly.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-pylonwarpininstantly.dds"/>
+        <Hotkey value="Button/Hotkey/BTNV"/>
+    </CButton>
+    <CButton id="PsiDisruptor">
+        <Hotkey value="Button/Hotkey/BTND"/>
+        <EditorCategories value=""/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="ResearchNeosteelFrame">
+        <Icon value="Assets\Textures\btn-upgrade-karax-energyregen200.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-energyregen200.dds"/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="SOAProxyPylon">
+        <Hotkey value="Button/Hotkey/BTNW"/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+    <CButton id="Sentry">
+        <EditorCategories value=""/>
+        <HotkeySet value="QuadDefense"/>
+    </CButton>
+</Catalog>

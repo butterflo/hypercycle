@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CValidatorUnitType id="IsFleetBeacon">
+        <ResultNoUnit value="CantTargetThatUnit"/>
+        <Value value="Sentry"/>
+    </CValidatorUnitType>
+    <CValidatorPlayerRequirement id="PlayerRange1">
+        <Find value="1"/>
+        <Value value="QuadRangeDone1"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorCombine id="PlayerRange1Actual">
+        <CombineArray value="PlayerRange1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="PlayerRange2Actual">
+        <CombineArray value="PlayerRange2"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="PlayerRange0Actual">
+        <CombineArray value="PlayerRange0"/>
+    </CValidatorCombine>
+    <CValidatorPlayerRequirement id="PlayerRange0">
+        <Find value="1"/>
+        <Value value="QuadRangeDone0"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="PlayerRange2">
+        <Find value="1"/>
+        <Value value="QuadRangeDone2"/>
+    </CValidatorPlayerRequirement>
+</Catalog>

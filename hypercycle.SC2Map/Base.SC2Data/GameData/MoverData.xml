@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CMoverMissile id="BacklashRocketsLMWeapon">
+        <MotionPhases index="0">
+            <Acceleration value="60"/>
+            <Speed value="30"/>
+            <MaxSpeed value="120"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+        <MotionPhases index="2">
+            <Acceleration value="300"/>
+            <Speed value="300"/>
+            <MaxSpeed value="300"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="D8Charge">
+        <MotionPhases index="0">
+            <Speed value="5"/>
+            <MaxSpeed value="5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="DrunkenMissile">
+        <MotionPhases index="0" Acceleration="72" MaxSpeed="64"/>
+    </CMoverMissile>
+    <CMoverMissile id="HurricaneMissile">
+        <MotionPhases index="1">
+            <Acceleration value="150"/>
+            <AccelerationRange value="350"/>
+            <MaxSpeed value="800"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="MengskWraithGroundLaser">
+        <MotionPhases index="0">
+            <Acceleration value="0"/>
+            <Speed value="0"/>
+            <MaxSpeed value="0"/>
+            <Timeout value="1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+        <MotionPhases index="1">
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <Speed value="64"/>
+            <MaxSpeed value="64"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="PhotonCannonWeapon">
+        <MotionPhases index="0" MaxSpeed="36" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360"/>
+    </CMoverMissile>
+    <CMoverMissile id="PunisherGrenadesWeapon">
+        <MotionPhases index="0">
+            <Driver value="Throw"/>
+            <Acceleration value="0"/>
+            <MinSpeed value="14"/>
+            <MaxSpeed value="14"/>
+            <Outro value="0,2"/>
+            <Timeout value="0.25"/>
+            <ThrowVector value="0,2,0"/>
+            <ThrowBandYaw value="45,-45,-360,-360"/>
+            <ThrowBandPitch value="45,-45,-360,-360"/>
+            <YawPitchRoll value="0"/>
+            <Overlays/>
+            <Overlays/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="77"/>
+            <Speed value="0"/>
+            <MaxSpeed value="343"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="TossBottle">
+        <MotionPhases index="0">
+            <Timeout value="1.5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <FlightTime value="0.88"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="32"/>
+            <MaxSpeed value="32"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <Overlays/>
+            <Overlays/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="WraithGroundLaser">
+        <MotionPhases index="0">
+            <MaxSpeed value="120"/>
+            <IgnoresTerrain value="1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="YamatoWeapon">
+        <MotionPhases index="0">
+            <Acceleration value="800"/>
+            <Speed value="0"/>
+            <MaxSpeed value="80"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+        <MotionPhases index="1" removed="1"/>
+    </CMoverMissile>
+</Catalog>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Asset path="assets\textures\ui_glues_profileavatar_gold_medium.dds" Type="Image"/>
+<Asset path="mission accepted.ogg" Type="Sound"/>
+<Asset path="assets\textures\ui_loadingbar_metalframe_teran.dds" Type="Image"/>
+<Asset path="breaking it.ogg" Type="Sound"/>
+<Asset path="assets\textures\ui_loadingbar_metalframe_protoss.dds" Type="Image"/>
+<Asset path="entering the atmosphere.ogg" Type="Sound"/>
+<Asset path="can i overcome.ogg" Type="Sound"/>
+<Asset path="assets\textures\ui_loadingbar_bar_highlighted_terran.dds" Type="Image"/>
+<Asset path="assets\textures\ui_loadingbar_bar_highlighted_protoss.dds" Type="Image"/>
+<Asset path="assets\textures\ui_tipicon_training_xelnaga.dds" Type="Image"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="LandingLights" Variations="0"/>
+<Actor id="TarsonisArrow"/>
+<Behavior id="TimeWarpProduction"/>
+<Behavior id="VoodooShield"/>
+<Behavior id="PurifierPlanetCracker"/>
+<Behavior id="DamageUP"/>
+<Behavior id="OverloadPenalty"/>
+<Behavior id="TowerDISABLED"/>
+<Behavior id="TimeWarpProductionDMY8"/>
+<Behavior id="TimeWarpProductionDMY"/>
+<Behavior id="TimeWarpProduction8"/>
+<Light id="ZhakulDas"/>
+<Light id="ShakurasCity"/>
+<Light id="KorhalCityEx2"/>
+<Light id="ShadowCorpsPlatform"/>
+<Model id="SOA_Beam"/>
+<Model id="LavaSplash"/>
+<Model id="LavaSplashBig"/>
+<Model id="SmokePillarsTall"/>
+<Model id="MothershipWarpIn"/>
+<Model id="FireSuppressionBots"/>
+<Model id="ArtanisVortexModel"/>
+<Model id="ZeratulStunModel"/>
+<Model id="KerriganApocalypseChannel"/>
+<Model id="NovaGadgetPulseGrenadesAttackImpact"/>
+<Model id="Warp100"/>
+<Model id="Warp100Huge"/>
+<Model id="Warp25Huge"/>
+<Model id="Warp400"/>
+<Model id="Warp400Huge"/>
+<Sound id="Battlecruiser_YamatoAttackChargeUp"/>
+<Sound id="Ghost_EMPAttackLaunch" Variations="0"/>
+<Sound id="Doodad_UmojanLabAlarms" Variations="0"/>
+<Sound id="UI_Bnet_MatchCountdown1"/>
+<Sound id="UI_BnetCountdown" Variations="0"/>
+<Sound id="TTychus05MusicEventB"/>
+<Sound id="UI_Horner05sTerminalButton"/>
+<Sound id="UI_ScoreScreenMissionName" Variations="0"/>
+<Sound id="UI_NavButtonSelect"/>
+<Sound id="Uni_RockExplosionLarge"/>
+<Sound id="WidowMine_ArmedBeep"/>
+<Sound id="HybridABirth"/>
+<Sound id="OdinBuild_Clunk"/>
+<Sound id="PurifierPlanetCrackerSound"/>
+<Sound id="ArmoryBanshee_Stand_Work"/>
+<Sound id="ArmoryDropship_CloseHatchBottom"/>
+<Sound id="TValerian03Adjutant00063"/>
+<Sound id="Event_Space02_CameraQuake"/>
+<Sound id="UI_Kerrigan_Abilities_EnergyBurst"/>
+<Sound id="UI_Nova_AuthenticationFadeIn"/>
+<Sound id="Nova_PulseGrenadeExplosion"/>
+<Sound id="CollectionBeam_ObjectFloatUp"/>
+<Sound id="AlarakPsionicOrbAttack" Variations="0"/>
+<Sound id="VoidChasm_DeathSweetener"/>
+<Sound id="RoboticsFacility_Karax_PowerDN" Variations="0"/>
+<Sound id="Pylon_Containment_Unit_Power_Down" Variations="0"/>
+<Sound id="Event_Aiur03_End_SoA_BlastOff"/>
+<Sound id="PEpilogue03_InfiniteCrystalisExplosion"/>
+<Sound id="SM_CS_SoA_PostEvasive_Warp_MvBy"/>
+<Sound id="DeviceAccel1"/>
+<Sound id="DeviceAccel2"/>
+<Sound id="DeviceAccel3"/>
+<Sound id="DeviceAccel4"/>
+<Sound id="DeviceAccelFinal"/>
+<Sound id="QuadBGM1"/>
+<Sound id="QuadBGM2"/>
+<Sound id="QuadBGM3"/>
+<Sound id="QuadBGM3X"/>
+<Sound id="QuadBGM4X"/>
+<Sound id="QuadBGM4"/>
+<Sound id="WaveComplete"/>
+<Soundtrack id="Music_Silence"/>
+<Soundtrack id="QuadOST1"/>
+<Terrain id="HybridLabOuter"/>
+<Unit id="Baneling"/>
+<Unit id="CommandCenter"/>
+<Unit id="SupplyDepot"/>
+<Unit id="Bunker"/>
+<Unit id="SupplyDepotLowered"/>
+<Unit id="Pylon"/>
+<Unit id="PhotonCannon"/>
+<Unit id="Sentry"/>
+<Unit id="Archon"/>
+<Unit id="ShieldBattery"/>
+<Unit id="Beacon_Zerg"/>
+<Unit id="Predator"/>
+<Unit id="PsiDisruptor"/>
+<Unit id="SJMercAATower"/>
+<Unit id="AiurCityWarpGateAbandoned"/>
+<Unit id="HERCCompound"/>
+</Preload>

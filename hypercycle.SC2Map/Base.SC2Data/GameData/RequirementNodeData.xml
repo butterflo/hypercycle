@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirementConst id="15">
+        <Value value="15"/>
+    </CRequirementConst>
+    <CRequirementConst id="16">
+        <Value value="16"/>
+    </CRequirementConst>
+    <CRequirementConst id="7">
+        <Value value="7"/>
+    </CRequirementConst>
+    <CRequirementAnd id="AndEqCountUpgradeNeosteelFrameQueuedOrBetter0EqCountUpgradeNeosteelFrameCompleteOnly0">
+        <OperandArray value="EqCountUpgradeNeosteelFrameQueuedOrBetter0"/>
+        <OperandArray value="EqCountUpgradeNeosteelFrameCompleteOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2">
+        <OperandArray value="EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0"/>
+        <OperandArray value="LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountUpgradeProtossShieldsLevel1InProgressOnly0EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0EqCountUpgradeNeosteelFrameInProgressOnly0">
+        <OperandArray value="EqCountUpgradeProtossShieldsLevel1InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0"/>
+        <OperandArray value="EqCountUpgradeNeosteelFrameInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradeNeosteelFrameCompleteOnly16EqCountUpgradeNeosteelFrameInProgressOnly0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTCountUpgradeNeosteelFrameCompleteOnly16"/>
+        <OperandArray value="EqCountUpgradeNeosteelFrameInProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUpgradehaltech4CompleteOnly16EqCountUpgradehaltech4InProgressOnly0">
+        <OperandArray value="LTCountUpgradehaltech4CompleteOnly16"/>
+        <OperandArray value="EqCountUpgradehaltech4InProgressOnly0"/>
+    </CRequirementAnd>
+    <CRequirementCountUpgrade id="CountUpgradeNeosteelFrameInProgressOnly">
+        <Count Link="NeosteelFrame" State="InProgressOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeProtossAirWeaponsLevel1InProgressOnly">
+        <Count Link="ProtossAirWeaponsLevel1" State="InProgressOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeProtossGroundWeaponsLevel1InProgressOnly">
+        <Count Link="ProtossGroundWeaponsLevel1" State="InProgressOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeProtossShieldsLevel1InProgressOnly">
+        <Count Link="ProtossShieldsLevel1" State="InProgressOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranInfantryWeaponsLevel1InProgressOnly">
+        <Count Link="TerranInfantryWeaponsLevel1" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradehaltech4CompleteOnly">
+        <Count Link="haltech4" State="CompleteOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradehaltech4InProgressOnly">
+        <Count Link="haltech4" State="InProgressOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountUpgradeNeosteelFrameCompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeNeosteelFrameCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeNeosteelFrameInProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeNeosteelFrameInProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeNeosteelFrameQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeNeosteelFrameQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeProtossAirWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeProtossAirWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly2">
+        <OperandArray index="0" value="CountUpgradeProtossAirWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeProtossAirWeaponsLevel1InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeProtossGroundWeaponsLevel1InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeProtossShieldsLevel1InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeProtossShieldsLevel1InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradeTerranInfantryWeaponsLevel1InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradehaltech4InProgressOnly0">
+        <OperandArray index="0" value="CountUpgradehaltech4InProgressOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementLT id="LTCountUpgradeNeosteelFrameCompleteOnly16">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeNeosteelFrameCompleteOnly"/>
+        <OperandArray index="1" value="16"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2">
+        <OperandArray index="0" value="CountUpgradeProtossAirWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradehaltech4CompleteOnly16">
+        <OperandArray index="0" value="CountUpgradehaltech4CompleteOnly"/>
+        <OperandArray index="1" value="16"/>
+    </CRequirementLT>
+</Catalog>

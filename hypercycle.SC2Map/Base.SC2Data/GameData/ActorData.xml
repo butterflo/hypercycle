@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit id="AiurCityWarpGateAbandoned">
+        <On index="65" Terms="ActorCreation" Send="AnimPlay Spin Stand PlayForever -1.000000 -1.000000 0.050000 AsTimeScale"/>
+        <On index="66" Terms="ActorCreation" Send="StatusSet GateState 1"/>
+        <On index="67" Terms="ActorCreation" Send="StatusSet StandSoundState 1"/>
+        <On index="69" Terms="ModelEvent; ModelEventName LoopStart" Send="Create JumpGate2_SoundLoop"/>
+        <On index="70" Terms="ModelEvent; ModelEventName LoopStart" Send="Create JumpGate3_SoundLoop"/>
+        <On index="71" Terms="ModelEvent; ModelEventName WhooshStart" Send="StatusSet StandSoundState 1"/>
+        <On index="72" Terms="ModelEvent; ModelEventName LoopEnd" Target="JumpGate2_SoundLoop" Send="Destroy"/>
+        <On index="73" Terms="ModelEvent; ModelEventName LoopEnd" Send="StatusSet StandSoundState 0"/>
+        <On index="74" Terms="ModelEvent; ModelEventName Whoosh; IsStatus StandSoundState 1" Send="Create ExpeditionGateDoodadWhoosh"/>
+        <On index="75" Terms="ModelEvent; ModelEventName PreWhoosh" Send="Create ExpeditionGateDoodadWhoosh"/>
+        <On index="76" removed="1"/>
+        <On index="77" removed="1"/>
+        <On index="78" removed="1"/>
+        <On index="79" removed="1"/>
+        <On index="80" removed="1"/>
+        <On index="81" removed="1"/>
+        <On index="82" removed="1"/>
+        <On index="83" removed="1"/>
+        <On index="84" removed="1"/>
+        <On index="85" removed="1"/>
+        <Scale value="0.500000"/>
+        <UnitIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Archon ................................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="Archon">
+        <On index="61" Terms="UnitBirth" Send="ModelSwap DarkProtossArchon"/>
+        <On index="62" Terms="UnitDeathCustomize" Send="DeathCustomize DarkProtoss"/>
+        <On index="63" Terms="WeaponStart.*.AttackStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
+        <On index="64" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="65" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="66" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On index="67" Terms="ProgressLevel.ProtossWarpIn.Start" Send="ModelSwap ProtossUnitBirth"/>
+        <On index="68" Terms="Upgrade.DarkProtoss.Add" Send="ModelSwap DarkProtossArchon"/>
+        <On index="69" Terms="UnitBirth; ValidateUnit NoDarkProtoss" Send="ModelSwap DarkProtossArchon"/>
+        <On index="70" Terms="Abil.ArchonWarp.Start; ValidateUnit NoDarkProtoss" Send="SetTintColor 255,255,64"/>
+        <On index="71" Terms="Abil.ArchonWarp.Stop; ValidateUnit NoDarkProtoss" Send="ModelSwap DarkProtossArchon"/>
+        <On index="72" Terms="Abil.ArchonWarp.Stop; ValidateUnit NoDarkProtoss" Send="SetTintColor 255,255,255"/>
+        <On index="73" Terms="UnitDeathCustomize; ValidateUnit NoDarkProtoss" Send="DeathCustomize DarkProtoss"/>
+        <On index="75" Terms="Upgrade.DarkProtoss.Add"/>
+        <On index="76" Terms="UnitBirth; ValidateUnit NoDarkProtoss"/>
+        <On index="77" Terms="Abil.ArchonWarp.Start; ValidateUnit NoDarkProtoss" Send="SetTintColor 255,255,64"/>
+        <On index="78" Terms="Abil.ArchonWarp.Stop; ValidateUnit NoDarkProtoss" Send="ModelSwap DarkProtossArchon"/>
+        <On index="79" Send="SetTintColor 255,255,255"/>
+        <On index="80" Terms="UnitDeathCustomize; ValidateUnit NoDarkProtoss" Send="DeathCustomize DarkProtoss"/>
+        <On index="81" removed="1"/>
+        <On index="82" removed="1"/>
+        <On index="83" removed="1"/>
+        <On index="84" removed="1"/>
+        <On index="85" removed="1"/>
+        <On index="86" removed="1"/>
+        <On index="87" removed="1"/>
+        <On index="88" removed="1"/>
+        <On index="89" removed="1"/>
+        <On index="90" removed="1"/>
+        <On index="91" removed="1"/>
+        <On index="92" removed="1"/>
+        <On index="93" removed="1"/>
+        <On index="94" removed="1"/>
+        <On index="95" removed="1"/>
+        <On index="96" removed="1"/>
+        <On index="97" removed="1"/>
+        <On index="98" removed="1"/>
+        <On index="99" removed="1"/>
+        <On index="100" removed="1"/>
+        <On index="101" removed="1"/>
+        <On index="102" removed="1"/>
+        <On index="103" removed="1"/>
+        <On index="104" removed="1"/>
+        <On index="105" removed="1"/>
+        <DeathArray index="Normal" ModelLink="DarkProtossArchonDeath"/>
+        <Model value="DarkProtossArchon"/>
+        <WalkAnimMoveSpeed value="7.5"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Baneling ........................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Baneling">
+        <WalkAnimMoveSpeed value="7.5"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Banshee ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Banshee">
+        <Scale value="18.000000"/>
+    </CActorUnit>
+    <CActorAction id="BansheeAttack">
+        <LaunchAssets Sound="Doodad_DominionEnergyCannon_Launch"/>
+    </CActorAction>
+    <CActorMissile id="BansheeAttackMissile">
+        <On Terms="UnitBirth.BacklashRocketsLMWeapon" Send="SetTintColor {64,128,255 64.000000}"/>
+        <BarHeight value="1"/>
+        <BarWidth value="1"/>
+    </CActorMissile>
+    <CActorModel id="BansheeCarpetBombModel">
+        <On index="3" removed="1"/>
+    </CActorModel>
+    <CActorSound id="BansheeCarpetBombSound">
+        <On index="1" removed="1"/>
+    </CActorSound>
+    <CActorAction id="BattlecruiserYamatoAttack">
+        <ImpactMap index="None" Model="GhostNukeExplode" Sound="Mission_End_2D_Nuke_Explosion"/>
+    </CActorAction>
+    <!-- Have a separate model here b/c we want to track the target when the missile is in flight, but then freeze-->
+    <!--         the explosion to its location on impact.  The explosion is mighty enough to look kind of dorky if it-->
+    <!--         tracks the target.  But we don't want to have the missile itself not track the target, since that'll-->
+    <!--         be misleading as far as how the attack actually works. -->
+    <CActorModel id="BattlecruiserYamatoAttackImpactModel">
+        <Flags index="SuppressSaveLoad" value="0"/>
+    </CActorModel>
+    <CActorMissile id="BattlecruiserYamatoAttackMissile">
+        <On Terms="ActorCreation" Send="SetTintColor {255,128,0 4.000000}"/>
+        <Scale value="2.000000"/>
+    </CActorMissile>
+    <CActorUnit id="Beacon_Zerg">
+        <On Terms="UnitBirth.Beacon_Zerg" Send="SetOpacity"/>
+        <On Terms="UnitBirth.Beacon_Zerg" Send="SetTintColor 255,0,0"/>
+        <On Terms="UnitBirth.Beacon_Zerg" Send="SetOpacity 1.000000 4.000000"/>
+        <Scale value="2.000000,2.000000,0.250000"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Bunker ................................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="Bunker">
+        <On index="60" Terms="Effect.SalvageShared.Stop" Send="Create ConstructionSalvageTerranBunker"/>
+        <On index="61" Terms="UnitBirth.Bunker" Send="StatusSet BunkerBuilt 1"/>
+        <On index="62" Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
+        <On index="63" Terms="Behavior.ShrikeTurret.On" Send="Create ShrikeTurret"/>
+        <On index="64" Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Send="Create ShrikeTurretPlaceholder"/>
+        <On index="65" Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Target="ShrikeTurret" Send="Signal TurretHide"/>
+        <On index="66" Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurret" Send="Signal TurretDeath"/>
+        <On index="67" Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
+        <On index="68" Terms="UnitBirth.Bunker" Target="ShrikeTurretPlaceholder"/>
+        <On index="69" Terms="UnitBirth.Bunker" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <On index="70" removed="1"/>
+        <On index="71" removed="1"/>
+        <On index="72" removed="1"/>
+        <On index="73" removed="1"/>
+        <On index="74" removed="1"/>
+        <On index="75" removed="1"/>
+        <On index="76" removed="1"/>
+        <On index="77" removed="1"/>
+        <On index="78" removed="1"/>
+        <On index="79" removed="1"/>
+        <On index="80" removed="1"/>
+        <On index="81" removed="1"/>
+        <On index="82" removed="1"/>
+        <On index="83" removed="1"/>
+        <On index="84" removed="1"/>
+        <On index="85" removed="1"/>
+        <On index="86" removed="1"/>
+        <On index="87" removed="1"/>
+        <On index="88" removed="1"/>
+        <On index="89" removed="1"/>
+        <On index="90" removed="1"/>
+        <On index="91" removed="1"/>
+        <On index="92" removed="1"/>
+        <On index="93" removed="1"/>
+        <On index="94" removed="1"/>
+        <On index="95" removed="1"/>
+        <On index="96" removed="1"/>
+        <On index="97" removed="1"/>
+        <On index="98" removed="1"/>
+        <On index="99" removed="1"/>
+        <On index="100" removed="1"/>
+        <On index="101" removed="1"/>
+        <On index="102" removed="1"/>
+        <On index="103" removed="1"/>
+        <On index="104" removed="1"/>
+        <On index="105" removed="1"/>
+        <On index="106" removed="1"/>
+        <On index="107" removed="1"/>
+        <On index="108" removed="1"/>
+        <On index="109" removed="1"/>
+        <On index="110" removed="1"/>
+        <On index="111" removed="1"/>
+        <On index="112" removed="1"/>
+        <On index="113" removed="1"/>
+        <On index="114" removed="1"/>
+        <On index="115" removed="1"/>
+        <On index="116" removed="1"/>
+        <On index="117" removed="1"/>
+        <On index="118" removed="1"/>
+        <DeathCustoms index="4" ModelLink="BunkerDeathEmpty" Name="Empty"/>
+        <DeathCustoms index="5" removed="1"/>
+        <DeathCustoms index="6" removed="1"/>
+        <BuildModel value="BunkerBuild"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorSound id="ColossusAttackLaunchSound">
+        <Sound value="Doodad_OuthouseLaunchStage1"/>
+    </CActorSound>
+    <CActorUnit id="CommandCenter">
+        <On Terms="UnitBirth.CommandCenter" Send="AnimGroupApply B"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorModel id="ConsumptionImpactModel">
+        <On index="3" Send="SetTintColor {64,128,255 16.000000}"/>
+        <On index="4" Terms="Effect.TrainInfestedTerran.Start"/>
+    </CActorModel>
+    <CActorModel id="Device1">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="ActorCreation" Send="AnimPlay initseq0 Stand FullMatch,PlayForever -1.000000 -1.000000 0.125000 AsTimeScale"/>
+        <On Terms="Signal.*.overdrive" Send="AnimBracketStart initseq2 Work,Start Work {} 0 0.500000 AsTimeScale"/>
+        <On Terms="Signal.*.quad1" Send="AnimSetTimeScale initseq2 1.000000"/>
+        <On Terms="Signal.*.quad2" Send="AnimSetTimeScale initseq2 4.000000"/>
+        <On Terms="Signal.*.quad3" Send="AnimSetTimeScale initseq2 16.000000"/>
+        <Model value="Nexus"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="IgnoreWalkables" value="1"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+        <AnimBlendTime value="60.000000"/>
+    </CActorModel>
+    <CActorModel id="Device2">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="ActorCreation" Send="AnimPlay initseq0 Stand FullMatch,PlayForever -1.000000 -1.000000 0.125000 AsTimeScale"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart initseq1 Stand,Unpowered Stand,Unpowered Stand,Unpowered,End Instant"/>
+        <On Terms="Signal.*.initseq" Send="AnimBracketStop initseq1 0 0.125000 AsTimeScale"/>
+        <On Terms="Signal.*.overdrive" Send="AnimBracketStart initseq2 Work,Start Work {} 0 0.500000 AsTimeScale"/>
+        <On Terms="Signal.*.quad1" Send="AnimSetTimeScale initseq2 1.000000"/>
+        <On Terms="Signal.*.quad2" Send="AnimSetTimeScale initseq2 4.000000"/>
+        <On Terms="Signal.*.quad3" Send="AnimSetTimeScale initseq2 16.000000"/>
+        <Model value="Obelisk"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="IgnoreWalkables" value="1"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+        <AnimBlendTime value="60.000000"/>
+    </CActorModel>
+    <CActorModel id="Device3">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="ActorCreation" Send="AnimPlay initseq0 Stand FullMatch,PlayForever -1.000000 -1.000000 0.125000 AsTimeScale"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart initseq1 Stand,Unpowered Stand,Unpowered Stand,Unpowered,End Instant"/>
+        <On Terms="Signal.*.initseq" Send="AnimBracketStop initseq1 0 0.125000 AsTimeScale"/>
+        <On Terms="Signal.*.overdrive" Send="AnimBracketStart initseq2 Work,Start Work {} 0 0.500000 AsTimeScale"/>
+        <On Terms="Signal.*.quad1" Send="AnimSetTimeScale initseq2 1.000000"/>
+        <On Terms="Signal.*.quad2" Send="AnimSetTimeScale initseq2 4.000000"/>
+        <On Terms="Signal.*.quad3" Send="AnimSetTimeScale initseq2 16.000000"/>
+        <Model value="Forge"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="IgnoreWalkables" value="1"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+        <AnimBlendTime value="60.000000"/>
+    </CActorModel>
+    <CActorModel id="Device4">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="ActorCreation" Send="AnimPlay initseq0 Stand FullMatch,PlayForever -1.000000 -1.000000 0.125000 AsTimeScale"/>
+        <On Terms="ActorCreation" Send="SetHeight -6.000000"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart initseq1 Stand,Unpowered Stand,Unpowered Stand,Unpowered,End Instant"/>
+        <On Terms="Signal.*.initseq" Send="AnimBracketStop initseq1 0 0.125000 AsTimeScale"/>
+        <On Terms="Signal.*.overdrive" Send="AnimBracketStart initseq2 Work,Start Work {} 0 0.500000 AsTimeScale"/>
+        <On Terms="Signal.*.quad1" Send="AnimSetTimeScale initseq2 1.000000"/>
+        <On Terms="Signal.*.quad2" Send="AnimSetTimeScale initseq2 4.000000"/>
+        <On Terms="Signal.*.quad3" Send="AnimSetTimeScale initseq2 16.000000"/>
+        <Model value="Stargate"/>
+        <Scale value="2.000000,1.000000,2.000000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="IgnoreWalkables" value="1"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+        <AnimBlendTime value="60.000000"/>
+    </CActorModel>
+    <CActorModel id="DeviceHyper">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="ActorCreation" Send="AnimPlay initseq0 Stand FullMatch,PlayForever -1.000000 -1.000000 0.250000 AsTimeScale"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,64,0 16.000000}"/>
+        <Model value="TemporalRiftModel"/>
+        <Scale value="1.500000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="IgnoreWalkables" value="1"/>
+    </CActorModel>
+    <CActorAction id="DiamondbackAttack">
+        <LaunchAssets Model="" Sound="Probe_AttackLaunch"/>
+        <Beam value=""/>
+    </CActorAction>
+    <CActorBeamSimple id="DiamondbackAttackBeam">
+        <On index="3" Terms="ActorOrphan" Send="Destroy"/>
+        <On index="4" Terms="ActorCreation" Send="SetTintColor {64,128,255 64.000000}"/>
+        <Scale value="16.000000"/>
+        <Model value="ProbeAttackBeam"/>
+    </CActorBeamSimple>
+    <CActorModel id="EMPBurstModel">
+        <On index="3" Terms="Effect.PurifierPlanetCrackerSearch.Start; At Source"/>
+        <On Terms="ActorCreation" Send="SetTintColor {0,128,255 16.000000}"/>
+        <Scale value="5.000000"/>
+    </CActorModel>
+    <CActorModelMaterial id="GlazeSuperShield">
+        <On index="4" Terms="Behavior.TimeWarpProduction.On"/>
+        <On index="7" Terms="Behavior.TimeWarpProduction.Off"/>
+        <On index="8" Terms="Behavior.TimeWarpProduction.Off"/>
+        <On Terms="Behavior.TimeWarpProductionDMY.On" Send="Create"/>
+        <On Terms="Behavior.TimeWarpProductionDMY.Off" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.TimeWarpProductionDMY.Off" Send="Destroy"/>
+        <Model value="GlazeStasis"/>
+    </CActorModelMaterial>
+    <CActorModelMaterial id="GlazePause" parent="GlazeParent">
+        <On Terms="Behavior.OverloadPenalty.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="UnitBirth" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="Behavior.OverloadPenalty.Off" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.OverloadPenalty.Off" Send="Destroy"/>
+        <On Terms="Behavior.TowerDISABLED.On" Send="Create"/>
+        <On Terms="Behavior.TowerDISABLED.Off" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.TowerDISABLED.Off" Send="Destroy"/>
+        <Model value="GlazeVoidStasis"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorModelMaterial id="GlazeSuperShield2" parent="GlazeParent">
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="UnitBirth" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="Behavior.TimeWarpProduction8.On" Send="Create"/>
+        <On Terms="Behavior.TimeWarpProduction8.Off" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.TimeWarpProduction8.Off" Send="Destroy"/>
+        <On Terms="Behavior.TimeWarpProductionDMY8.On" Send="Create"/>
+        <On Terms="Behavior.TimeWarpProductionDMY8.Off" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.TimeWarpProductionDMY8.Off" Send="Destroy"/>
+        <Model value="GlazeSuperShield"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorModelMaterial id="DAMAGEGlaze" parent="GlazeParent">
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="UnitBirth" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="Behavior.DamageUP.Create" Send="Create"/>
+        <On Terms="Behavior.DamageUP.Destroy" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="Behavior.DamageUP.Destroy" Send="Destroy"/>
+        <Model value="GlazeFenixShield"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorSelection id="GroundLocalSelection">
+        <Scale value="2.000000"/>
+        <OuterWidth value="0.100000"/>
+        <SelectionFlags index="UseCrescent" value="0"/>
+        <HalfHeight value="4.000000"/>
+        <Attenuation value="0.000000"/>
+    </CActorSelection>
+    <CActorSelection id="GroundPreSelection">
+        <Scale value="2.000000"/>
+        <Alpha value="1.000000,1.000000,1.000000"/>
+        <InnerWidth value="0.000000"/>
+        <OuterWidth value="0.100000"/>
+        <RotationSpeed value="0.125000"/>
+        <SegmentCount value="4"/>
+        <SegmentPercentSolid value="0.500000"/>
+    </CActorSelection>
+    <CActorModel id="GuardianShield">
+        <On index="3" Terms="Behavior.GuardianShield.Create"/>
+        <On index="4" Terms="Behavior.GuardianShield.Destroy"/>
+    </CActorModel>
+    <CActorUnit id="HERCCompound">
+        <On Terms="ActorCreation" Send="ClearTeamColor"/>
+        <Scale value="0.500000"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorDoodad id="HavenDoodadsCrates">
+        <On Terms="ActorCreation" Send="SetTintColor {0,255,255 16.000000}"/>
+        <Model value="AiurSkybox"/>
+        <Scale value="0.800000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <Footprint value="Footprint2x2"/>
+    </CActorDoodad>
+    <CActorSiteOpEffect id="IgnoreTerrainForMissile">
+        <EditorCategories value=""/>
+        <Location value="CasterUnit"/>
+        <ZOnly value="1"/>
+    </CActorSiteOpEffect>
+    <CActorUnit id="Immortal">
+        <On Terms="UnitBirth" Send="SetTintColor {255,255,255 4.000000}"/>
+        <On Terms="UnitBirth" Send="SetTintColor 255,255,255 2.000000"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Infested Supply ....................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="InfestedSupply">
+        <On Terms="Signal.*.confine" Send="AnimBracketStart ConfineDepot Burrow Spell Spell 0 2.000000 AsTimeScale"/>
+        <On Terms="Signal.*.charge" Send="SetTintColor {255,255,255 8.000000} 8.000000"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+    </CActorUnit>
+    <CActorSound id="Marauder_Stimpack">
+        <On index="1" removed="1"/>
+    </CActorSound>
+    <CActorAction id="MothershipAttack">
+        <LaunchAttachQuery Methods="Damage 3" Fallback="Damage"/>
+    </CActorAction>
+    <!-- Attack                                                                                  -->
+    <CActorBeamSimple id="MothershipAttackBeam">
+        <HostImpactSiteOps HoldPosition="1" HoldRotation="1"/>
+    </CActorBeamSimple>
+    <CActorModel id="ObeliskEffect">
+        <On index="4" Terms="Behavior.SOAGlobalChronoProd.On"/>
+        <On index="5" Terms="Behavior.SOAGlobalChronoResearch.On"/>
+        <On index="6" Terms="Behavior.SOAGlobalChronoProd.Off" Send="Destroy"/>
+        <On index="7" Terms="Behavior.SOAGlobalChronoResearch.Off" Send="Destroy"/>
+        <On index="8" removed="1"/>
+        <On index="9" removed="1"/>
+        <On index="10" removed="1"/>
+        <On index="11" removed="1"/>
+        <On index="12" removed="1"/>
+        <On index="13" removed="1"/>
+        <On index="14" removed="1"/>
+        <On index="15" removed="1"/>
+    </CActorModel>
+    <CActorModel id="OracleCastLaunch">
+        <HostSiteOps Ops="SOpCasterUnitZ"/>
+    </CActorModel>
+    <CActorUnit id="PhotonCannon">
+        <StatusBarGroups index="Owner" value="0"/>
+        <StatusBarGroups index="Allied" value="0"/>
+        <StatusBarGroups index="Enemy" value="0"/>
+        <StatusBarGroups index="All" value="0"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <!-- Attack                                                                                  -->
+    <CActorMissile id="PhotonCannonAttackMissile">
+        <BarHeight value="1"/>
+        <BarWidth value="1"/>
+        <On Terms="UnitBirth" Send="SetTintColor {255,255,128 4.000000}"/>
+    </CActorMissile>
+    <!-- Planetary Fortress Attack                                                               -->
+    <CActorAction id="PlanetaryFortressAttack" effectAttack="AEInstagib">
+        <On index="0" Terms="Effect.AEInstagib.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.AEInstagib.Start; At Caster"/>
+        <LaunchAssets Sound="SiegeTank_SiegedAttackLaunch"/>
+        <ContainerAssets Model="AEInstagibBunkerAttackLaunch" Sound="AEInstagibBunkerAttackLaunch"/>
+    </CActorAction>
+    <!--                                                                                         -->
+    <!-- Predator .............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Predator">
+        <WalkAnimMoveSpeed value="7.5"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorAction id="ProbeAttack">
+        <On index="0" Terms="Effect.MengskSiegeTankSiegedBlast.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.MengskSiegeTankSiegedBlast.Start; At Caster"/>
+        <ContainerAssets Model="MengskSiegeTankSiegedBlastBunkerAttackLaunch" Sound="MengskSiegeTankSiegedBlastBunkerAttackLaunch"/>
+    </CActorAction>
+    <CActorModel id="PrologueVoidArmorLaunch">
+        <On index="3" Terms="Effect.ApplyDAMAGEUP.Start"/>
+        <On Terms="Effect.ApplyDAMAGEDN.Start" Send="Create"/>
+    </CActorModel>
+    <CActorEventMacro id="ProtossBuildingPowerUp">
+        <On index="0" removed="1"/>
+        <On index="1" removed="1"/>
+        <On index="2" removed="1"/>
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+        <On index="5" removed="1"/>
+        <On index="6" removed="1"/>
+    </CActorEventMacro>
+    <!--                                                                                         -->
+    <!-- Psi Disruptor ......................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="PsiDisruptor">
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorRange id="PsiDisruptorProtectRange">
+        <Range value="0.000000"/>
+    </CActorRange>
+    <CActorRange id="PsiDisruptorRange">
+        <Range value="0.000000"/>
+        <On index="1" removed="1"/>
+        <On index="2" removed="1"/>
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+    </CActorRange>
+    <CActorUnit id="Pylon">
+        <Scale value="1.000000,1.000000,1.250000"/>
+        <StatusBarGroups index="Owner" value="0"/>
+        <StatusBarGroups index="Allied" value="0"/>
+        <StatusBarGroups index="Enemy" value="0"/>
+        <StatusBarGroups index="All" value="0"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorUnit id="PylonContainmentUnit"/>
+    <CActorUnit id="SJMercAATower">
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorModel id="SOAOrbitalStrikeTargetModel">
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <On Terms="UnitBirth.CommandCenter" Send="Create"/>
+        <On Terms="UnitDeath.CommandCenter" Send="Destroy"/>
+        <Remove index="0" removed="1"/>
+    </CActorModel>
+    <!--                                                                                         -->
+    <!-- Sensor Tower .......................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="SensorTower">
+        <On Terms="Effect.EMPLaunchMissile.Launch" Send="SetTintColor {128,255,255 16.000000}"/>
+        <On Terms="Effect.EMPLaunchMissile.Launch" Send="ClearTintColor 4.000000"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Sentry ................................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="Sentry">
+        <StatusBarGroups index="Owner" value="0"/>
+        <StatusBarGroups index="Allied" value="0"/>
+        <StatusBarGroups index="Enemy" value="0"/>
+        <StatusBarGroups index="All" value="0"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorUnit id="SentryGun">
+        <Scale value="3.000000"/>
+    </CActorUnit>
+    <CActorUnit id="ShieldBattery">
+        <StatusBarGroups index="Owner" value="0"/>
+        <StatusBarGroups index="Allied" value="0"/>
+        <StatusBarGroups index="Enemy" value="0"/>
+        <StatusBarGroups index="All" value="0"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+    </CActorUnit>
+    <CActorRange id="ShieldBatteryRange">
+        <On index="5" removed="1"/>
+        <On index="6" removed="1"/>
+        <On index="7" removed="1"/>
+        <On index="8" removed="1"/>
+    </CActorRange>
+    <CActorAction id="StalkerAttack">
+        <LaunchAssets Sound="StarShip_Adun_Turret_Launch"/>
+    </CActorAction>
+    <CActorModel id="StimpackStartImpact">
+        <On index="4" removed="1"/>
+    </CActorModel>
+    <CActorUnit id="SupplyDepot">
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <UnitIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <StatusBarGroups index="Owner" value="0"/>
+        <StatusBarGroups index="Allied" value="0"/>
+        <StatusBarGroups index="Enemy" value="0"/>
+        <StatusBarGroups index="All" value="0"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+        <!--DeathArray index="Normal" SoundLink=""/-->
+    </CActorUnit>
+    <CActorUnit id="SupplyDepotLowered">
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <UnitIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <Wireframe>
+            <Image index="0" value="Assets\Textures\wireframe-protoss-expeditiongate-shield01.dds"/>
+            <Image value="Assets\Textures\wireframe-protoss-expeditiongate-shield02.dds"/>
+            <Image value="Assets\Textures\wireframe-protoss-expeditiongate-shield03.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="Assets\Textures\wireframe-protoss-expeditiongate-shield01.dds"/>
+            <Image value="Assets\Textures\wireframe-protoss-expeditiongate-shield02.dds"/>
+            <Image value="Assets\Textures\wireframe-protoss-expeditiongate-shield03.dds"/>
+        </WireframeShield>
+    </CActorUnit>
+    <CActorDoodad id="TarsonisArrow">
+        <On index="1" Send="$Stand PlayForever"/>
+        <ModelFlags index="UseConstSyncSeed" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="1"/>
+    </CActorDoodad>
+    <CActorSound id="TimeWarpImpactSound">
+        <Sound value="AlarakPsionicOrbAttack"/>
+        <On index="1" Terms="BehaviorLevel.TimeWarpResearch.Start; Level 1"/>
+        <On index="2" Terms="BehaviorLevel.SOAGlobalChronoProd.Start; Level 1"/>
+        <On index="3" Terms="BehaviorLevel.SOAGlobalChronoResearch.Start; Level 1"/>
+        <On index="4" removed="1"/>
+    </CActorSound>
+    <CActorModel id="TimeWarpLaunch">
+        <On index="3" Terms="Abil.Stimpack.SourceCastStart"/>
+    </CActorModel>
+    <!--                                                                                         -->
+    <!-- Void Seeker ........................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="VoidSeeker">
+        <On Terms="UnitBirth.VoidSeeker" Send="SetTintColor {64,128,255 64.000000}"/>
+        <On Terms="Effect.HybridFSearch.Start" Send="SetTintColor {0,0,0 0.000000}"/>
+        <On Terms="Effect.HybridFSearch.Start" Send="SetTintColor {64,128,255 64.000000} 8.000000"/>
+        <Scale value="4.000000"/>
+        <ModelFlags index="WireframeRender" value="1"/>
+    </CActorUnit>
+    <CActorMissile id="VoidSeekerAttackMissile">
+        <On Terms="ActorCreation" Send="SetTintColor {128,255,255 16.000000}"/>
+        <Scale value="4.000000"/>
+    </CActorMissile>
+    <!-- Psi Shield -->
+    <CActorModel id="VoodooShield">
+        <On index="0" Send="AnimBracketStart BSD Stand,Work,Start Stand,Work Stand,Work,End"/>
+        <On index="1" Send="AnimBracketStop BSD"/>
+        <On index="2" Terms="Behavior.VoodooShield.On" Send="Create"/>
+        <On index="3" Terms="Behavior.VoodooShield.Off" Send="AnimBracketStop BSD"/>
+        <On index="4" Terms="AnimBracketState.*.AfterClosing" Send="Destroy"/>
+        <On index="5" Send="SetTintColor 255,96,16"/>
+        <On index="6" removed="1"/>
+        <Host Subject="_Unit"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+    </CActorModel>
+</Catalog>

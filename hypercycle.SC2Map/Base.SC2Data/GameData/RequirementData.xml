@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="LearnInterceptorLaunchSpeedUpgrade">
+        <NodeArray index="Show" Link="AndLTCountUpgradehaltech4CompleteOnly16EqCountUpgradehaltech4InProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="LearnNeosteelFrame">
+        <NodeArray index="Show" Link="AndLTCountUpgradeNeosteelFrameCompleteOnly16EqCountUpgradeNeosteelFrameInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="LearnProtossGroundWeapon1">
+        <NodeArray index="Show" Link="AndEqCountUpgradeProtossShieldsLevel1InProgressOnly0EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0EqCountUpgradeNeosteelFrameInProgressOnly0"/>
+    </CRequirement>
+    <CRequirement id="LearnProtossShield3">
+        <NodeArray index="Use" Link=""/>
+        <NodeArray index="Show" Link="AndEqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2"/>
+    </CRequirement>
+    <CRequirement id="QuadRangeDone0">
+        <NodeArray index="Show" Link="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="QuadRangeDone1">
+        <NodeArray index="Show" Link="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="QuadRangeDone2">
+        <NodeArray index="Show" Link="EqCountUpgradeProtossAirWeaponsLevel1CompleteOnly2"/>
+    </CRequirement>
+</Catalog>
