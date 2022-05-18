@@ -1,0 +1,1 @@
+crop to center with bottom -525 left -850

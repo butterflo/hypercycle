@@ -1,0 +1,2 @@
+resize to 1440*810
+crop to center with bottom -80
