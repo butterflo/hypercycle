@@ -5,6 +5,7 @@
         <FlagArray index="IgnoreTerrainZInit" value="1"/>
         <EditorFlags index="NeutralDefault" value="0"/>
         <Collide index="RoachBurrow" value="0"/>
+        <Attributes index="Armored" value="1"/>
         <LifeStart value="65536"/>
         <LifeMax value="65536"/>
         <LifeArmor value="0"/>
@@ -22,7 +23,6 @@
         <Footprint value="Footprint4x4Contour"/>
         <PlacementFootprint value="Footprint4x4Contour"/>
         <RankDisplay value="Never"/>
-        <Attributes index="Armored" value="1"/>
     </CUnit>
     <CUnit id="Baneling">
         <LifeStart value="4"/>
@@ -431,6 +431,21 @@
         <PowerupEffect value="PylonShieldRechargePersistent"/>
         <PowerupRange value="7"/-->
     </CUnit>
+    <CUnit id="Replicant">
+        <LifeStart value="65536"/>
+        <LifeMax value="65536"/>
+        <LifeRegenRate value="65536"/>
+        <ShieldsStart value="65536"/>
+        <ShieldsMax value="65536"/>
+        <ShieldRegenRate value="65536"/>
+        <ShieldDamageRatio value="65536"/>
+        <AbilArray index="4" Link="ProgressRally"/>
+        <AbilArray index="5" removed="1"/>
+        <WeaponArray index="0" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" removed="1"/>
+        </CardLayouts>
+    </CUnit>
     <CUnit id="SJMercAATower">
         <FlagArray index="Invulnerable" value="1"/>
         <Attributes index="Armored" value="0"/>
@@ -545,6 +560,7 @@
         <Collide index="Locust" value="0"/>
         <Collide index="Flying" value="1"/>
         <Mover value="Fly"/>
+        <Radius value="0"/>
     </CUnit>
     <CUnit id="ShieldBattery">
         <FlagArray index="Invulnerable" value="1"/>
@@ -620,5 +636,6 @@
             <LayoutButtons index="0" Face="" Type="Undefined" AbilCmd=""/>
         </CardLayouts>
         <Footprint value="Footprint3x3"/>
+        <Description value="Button/Tooltip/SupplyDepot"/>
     </CUnit>
 </Catalog>

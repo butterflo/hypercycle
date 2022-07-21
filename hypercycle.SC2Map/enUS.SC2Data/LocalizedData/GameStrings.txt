@@ -21,8 +21,8 @@ Behavior/Name/OverloadPenalty=과부하
 Behavior/Name/PylonSummoningDummy=Pylon Summoning Dummy
 Behavior/Name/TimeWarpProduction=ACCEL
 Behavior/Name/TimeWarpProduction8=ACCEL
-Behavior/Name/TimeWarpProductionDMY=Accel DMY
-Behavior/Name/TimeWarpProductionDMY8=Accel DMY
+Behavior/Name/TimeWarpProductionDMY=ACCEL
+Behavior/Name/TimeWarpProductionDMY8=ACCEL
 Behavior/Name/TowerDISABLED=No Power
 Behavior/Tooltip/OverloadPenalty=<c val="FFFFFF">You turned this off.</c>
 Behavior/Tooltip/TimeWarpProduction=<c val="FFFFFF">Is running faster.</c>
@@ -71,16 +71,24 @@ Button/Tooltip/PsiDisruptor=<c val="FFFF00">Power load : <c val="FFFFFF">1024</c
 Button/Tooltip/ResearchNeosteelFrame=<c val="FFFFFF">Upon completion: </n><c val="FFFF00">(Power gen x2)</c>
 Button/Tooltip/SOAProxyPylon=<c val="FFFF00">Power load : <c val="FFFFFF">4</c><n/><c val="FFFF00">Damage/hit :</c> <c val="FFFFFF"><d ref="Effect,MothershipBeamDamage,Amount"/></c><n/><n/><c val="00FFFF">(Long-range attack)</c>
 Button/Tooltip/Sentry=<c val="FFFFFF">The builder.</c><n/><n/><c val="80FF00">(Invulnerable)
+Button/Tooltip/SupplyDepot=<c val="FFFFFF">Provides power.</c>
 Button/Tooltip/WraithCloakOff=<c val="FFFFFF">수퍼실드 작동을 중지합니다.</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=Hypercycle full throttle!<n/>Tower defense where things go fast.<n/>Use ACCEL to boost all towers.
+DocInfo/DescLong=Hypercycle full throttle.<n/>Tower defense where everything goes fast.<n/>Use ACCEL to boost all towers.
 DocInfo/HowToPlayAdvanced00=Beat each level to unlock extend mode.
+DocInfo/HowToPlayAdvanced01=Type format on chat to clear save.
 DocInfo/HowToPlayBasic00=Build towers and defend the Hypercycle engine. Towers increase power load.
 DocInfo/HowToPlayBasic01=Use ACCEL to boost all towers. ACCEL increases power load.
 DocInfo/HowToPlayBasic02=Upgrade Hypercycle to increase power gen for more towers.
 DocInfo/HowToPlayWinning00=Make through all waves to win.
 DocInfo/Name=HYPERCYCLE
-DocInfo/PatchNote001=Arcade publish
+DocInfo/PatchNote001=Arcade release
+DocInfo/PatchNote002=Balance rework
+DocInfo/PatchNote003=- The game now has only three difficulties (all are clearable, manually tested)
+DocInfo/PatchNote004=- Pylon buffed: now takes up 1x1 for pathing
+DocInfo/PatchNote005=- Pylon buffed: increased firerate
+DocInfo/PatchNote006=- Minor UI cleanups
+DocInfo/PatchNote007=- Resource system bugfix
 Effect/Name/ACCELToggleON=ACCEL Toggle ON
 Effect/Name/ApplyDAMAGEDN=Apply DAMAGE DN
 Effect/Name/Claws=Universal Damage
@@ -135,6 +143,7 @@ Param/Value/4ABB23C0=<s val="OrbitronBold16"><c val="80FF00">WAVE</c>
 Param/Value/4AC9ABF5=<s val="OrbitronBold32"><c val="FFFFFF">Legion HP <c/>
 Param/Value/5301975A=<s val="OrbitronBold24"><c val="FFFF00">RETURN</c></s>
 Param/Value/58662B89=<s val="OrbitronBold16"><c val="00FFFF">OPTIMAL x8</c>
+Param/Value/58D0331C=<s val="STconsole">disc format OK</c>
 Param/Value/5B218D0F=<s val="STconsole"><c val="FFFFFF">Press <c val="00FF00">[ Enter ]</c></c>
 Param/Value/5DA21CE8=<s val="STconsole"><c val="00FFFF">HYPERCYCLE READY</c>
 Param/Value/5FBED14A=<s val="OrbitronBold16"><c val="00FF00">ACCEL x4</c>
@@ -148,7 +157,7 @@ Param/Value/81D6312D=65536
 Param/Value/82532A0A=HARDEST
 Param/Value/86034C8D=<s val="OrbitronBold16"><c val="00FFFF">
 Param/Value/8A7E3D95=<s val="STconsole">RELEASE
-Param/Value/8D288266=<s val="OrbitronBold20"><c val="FFFF00">"Mission Accepted"<n/>"Can I Overcome"<n/>"Breaking It"<n/>"Entering the Atmosphere"<n/></c><c val="80FF00">Heaven Variant OST - Jason Koohi<n/></c><n/><c val="FFFFFF">Copyright Disclaimer: I do not own the tracks, and no profit is being made with this game.</c>
+Param/Value/8D288266=<s val="OrbitronBold20"><c val="FFFF00">"Mission Accepted"<n/>"Can I Overcome"<n/>"Breaking It"<n/>"Entering the Atmosphere"<n/>"Heaven Variant! Transform!"<n/>"Spaceships Can Drift Too"<n/></c><c val="80FF00">Heaven Variant OST - Jason Koohi<n/></c><n/><c val="FFFFFF">Copyright Disclaimer: I do not own the tracks, and no profit is being made with this game.</c>
 Param/Value/8DED1A6A=SetTintColor {128,255,255 7.000000} 210.000000
 Param/Value/8EF1E429=<s val="OrbitronBold16">
 Param/Value/905E2DF6=<s val="STconsole"><c val="FFFF00">
@@ -161,6 +170,7 @@ Param/Value/A4675CF9=<s val="OrbitronBold16">
 Param/Value/AE3872F5=<s val="OrbitronBold32"><c val="c0c0c0">Wave <c val="8040FF">
 Param/Value/AF915F80=
 Param/Value/B55CC422=
+Param/Value/BAD08D67=<s val="STconsole">rebooting</c>
 Param/Value/BAD5843B= / 
 Param/Value/BBA1B7BE=<s val="STconsole"><c val="00FF00">phase 0 complete.</c>
 Param/Value/BCFF8AFD=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="80FF00">
@@ -175,6 +185,7 @@ Param/Value/D9A1690A=HYPERCYCLE : HARDER -EXTEND-
 Param/Value/DB566095=<s val="STconsole"># Hotkeys<n/><c val="00FFFF">[ 1 ]</c> Builder core<n/><c val="00FFFF">[ 2 ]</c> Hypercycle control<n/><c val="00FFFF">[ 2 C ]</c> ACCEL<n/><c val="00FFFF">[ 3 ]</c> Upgrade<n/><c val="00FFFF">[ DEL ]</c> Demolish<n/></s>
 Param/Value/DD43F6E0=<s val="OrbitronBold16"><c val="FFFF00">RUSH</c>
 Param/Value/E68D85F7=<s val="OrbitronBold32"><c val="FFFFFF">Wave <c val="FFFF00">???
+Param/Value/EAC602D3=<s val="STconsole">path validation disabled</c>
 Param/Value/F1033361=<s val="OrbitronBold20"><c val="00FFFF">x
 Param/Value/F198DEDF=<s val="STconsole"><c val="00FFFF">HYPERCYCLE session initiated: </c>
 Param/Value/F55B9F5F=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP <c val="FF4000">
@@ -200,6 +211,7 @@ Unit/Name/InfestedSupply=Infested AllBase
 Unit/Name/PhotonCannon=Plasma Cannon
 Unit/Name/PsiDisruptor=Supershield
 Unit/Name/Pylon=Pylon
+Unit/Name/Replicant=Practice Target
 Unit/Name/SJMercAATower=Orbital Support Platform
 Unit/Name/Sentry=Builder Core
 Unit/Name/ShieldBattery=Tesla Battery

@@ -28,12 +28,15 @@
     <PatchNote>
         <Version>
             <Value>2.0</Value>
+            <Value>2.1</Value>
         </Version>
         <Date>
             <Value>1/31/2017</Value>
+            <Value>7/15/2022</Value>
         </Date>
         <Notes>
             <Value>1</Value>
+            <Value>2,3,4,5,6,7</Value>
         </Notes>
     </PatchNote>
     <Preload>

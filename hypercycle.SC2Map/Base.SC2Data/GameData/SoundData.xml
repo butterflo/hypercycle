@@ -252,7 +252,7 @@
         <Volume value="-1.000000,-1.000000"/>
     </CSound>
     <CSound id="QuadBGM3X">
-        <AssetArray File="Two Dimensions.ogg" FacialGroup=""/>
+        <AssetArray File="Heaven Variant! Transform!.ogg" FacialGroup=""/>
         <Flags index="Stream" value="1"/>
         <Category value="Music"/>
         <Volume value="-1.000000,-1.000000"/>

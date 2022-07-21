@@ -122,19 +122,16 @@
         <Name value="Behavior/Name/TimeWarpProductionDMY8"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY8"/>
         <Modification TimeScale="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProductionDMY" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TimeWarpProductionDMY"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProductionDMY"/>
         <Modification TimeScale="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TimeWarpProduction8" parent="TimeWarpProduction">
         <Name value="Behavior/Name/TimeWarpProduction8"/>
         <Tooltip value="Behavior/Tooltip/TimeWarpProduction8"/>
         <Modification TimeScale="8"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-protoncharge-color.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoodooShield">
         <Duration value="0"/>

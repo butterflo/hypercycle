@@ -81,9 +81,6 @@
         <Period value="1"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
-        <Marker Duration="0.5">
-            <MatchFlags index="Link" value="1"/>
-        </Marker>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <ArcSlop value="0"/>
         <DamagePoint value="0"/>

@@ -436,6 +436,16 @@
         <BarWidth value="1"/>
         <On Terms="UnitBirth" Send="SetTintColor {255,255,128 4.000000}"/>
     </CActorMissile>
+    <CActorRange id="PhotonCannonBlastRange">
+        <Filter index="All" value="1"/>
+        <Range value="0.000000"/>
+    </CActorRange>
+    <CActorRange id="PhotonCannonDetectRange">
+        <Filter index="All" value="1"/>
+    </CActorRange>
+    <CActorRange id="PhotonCannonProtectRange">
+        <Filter index="All" value="1"/>
+    </CActorRange>
     <!-- Planetary Fortress Attack                                                               -->
     <CActorAction id="PlanetaryFortressAttack" effectAttack="AEInstagib">
         <On index="0" Terms="Effect.AEInstagib.Stop; FromEffectTreeDescendant"/>
@@ -476,6 +486,7 @@
     </CActorUnit>
     <CActorRange id="PsiDisruptorProtectRange">
         <Range value="0.000000"/>
+        <Filter index="All" value="1"/>
     </CActorRange>
     <CActorRange id="PsiDisruptorRange">
         <Range value="0.000000"/>
@@ -483,6 +494,7 @@
         <On index="2" removed="1"/>
         <On index="3" removed="1"/>
         <On index="4" removed="1"/>
+        <Filter index="All" value="1"/>
     </CActorRange>
     <CActorUnit id="Pylon">
         <Scale value="1.000000,1.000000,1.250000"/>
@@ -530,10 +542,7 @@
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
     <CActorRange id="ShieldBatteryRange">
-        <On index="5" removed="1"/>
-        <On index="6" removed="1"/>
-        <On index="7" removed="1"/>
-        <On index="8" removed="1"/>
+        <Filter index="All" value="1"/>
     </CActorRange>
     <CActorAction id="StalkerAttack">
         <LaunchAssets Sound="StarShip_Adun_Turret_Launch"/>

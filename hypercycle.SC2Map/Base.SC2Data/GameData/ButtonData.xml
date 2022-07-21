@@ -15,6 +15,7 @@
         <Icon value="Assets\Textures\btn-doodad-spaceordinancetower.dds"/>
         <AlertIcon value="Assets\Textures\btn-doodad-spaceordinancetower.dds"/>
         <Hotkey value="Button/Hotkey/BTNS"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="FleetBeacon">
         <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
@@ -27,10 +28,14 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
         <TintRacially value="1"/>
+        <Hotkey value="Button/Hotkey/BTNC"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="OracleWeaponOn">
         <Icon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-optimizedlogistics.dds"/>
+        <Hotkey value="Button/Hotkey/BTNC"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="PhotonCannon">
         <Hotkey value="Button/Hotkey/BTNQ"/>
@@ -39,16 +44,19 @@
     </CButton>
     <CButton id="PrologueVoidArmor">
         <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="PrologueVoidArmor2">
         <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <TintRacially value="1"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="ProtossBuild">
         <Icon value="Assets\Textures\btn-upgrade-karax-pylonwarpininstantly.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-karax-pylonwarpininstantly.dds"/>
         <Hotkey value="Button/Hotkey/BTNV"/>
+        <HotkeySet value="QuadDefense"/>
     </CButton>
     <CButton id="PsiDisruptor">
         <Hotkey value="Button/Hotkey/BTND"/>
