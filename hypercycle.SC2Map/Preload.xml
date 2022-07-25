@@ -5,12 +5,12 @@
 <Asset path="assets\textures\ui_loadingbar_metalframe_teran.dds" Type="Image"/>
 <Asset path="breaking it.ogg" Type="Sound"/>
 <Asset path="assets\textures\blank.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-mengsk-blimp-propagandamode.dds" Type="Image"/>
 <Asset path="assets\textures\ui_loadingbar_metalframe_protoss.dds" Type="Image"/>
 <Asset path="entering the atmosphere.ogg" Type="Sound"/>
 <Asset path="can i overcome.ogg" Type="Sound"/>
 <Asset path="assets\textures\ui_loadingbar_bar_highlighted_terran.dds" Type="Image"/>
 <Asset path="assets\textures\ui_loadingbar_bar_highlighted_protoss.dds" Type="Image"/>
-<Asset path="assets\textures\ui_tipicon_training_xelnaga.dds" Type="Image"/>
 <Actor id="SYSTEM_ActorConfig"/>
 <Actor id="LandingLights" Variations="0"/>
 <Actor id="TarsonisArrow"/>

@@ -99,16 +99,17 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="0"/>
         <Range value="32"/>
-        <Period value="0.25"/>
+        <Period value="1"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
         <Options index="LinkedCooldown" value="0"/>
         <Options index="DisplayCooldown" value="1"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-corruptormissilebarrage.dds"/>
         <RangeSlop value="0"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <Arc value="360"/>
         <ArcSlop value="0"/>
         <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <Effect value="BunkerWeaponSEARCH"/>
     </CWeaponLegacy>
 </Catalog>

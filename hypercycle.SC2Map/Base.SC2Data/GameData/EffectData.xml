@@ -21,6 +21,10 @@
         <Range value="500"/>
         <ValidatorArray index="0" removed="1"/>
     </CEffectTeleport>
+    <CEffectEnumArea id="BunkerWeaponSEARCH">
+        <EditorCategories value=""/>
+        <AreaArray MaxCount="4" Radius="32" Effect="PunisherGrenadesLM"/>
+    </CEffectEnumArea>
     <CEffectDamage id="BurndownDamage">
         <Amount value="0"/>
     </CEffectDamage>

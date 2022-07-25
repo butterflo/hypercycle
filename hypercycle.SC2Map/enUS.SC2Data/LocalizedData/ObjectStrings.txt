@@ -64,6 +64,7 @@ Behavior/Tooltip/GuardianShield=기갑 불멸자 보호막
 Effect/EditorPrefix/ACCELToggleON=HYPERCYCLE
 Effect/EditorPrefix/ApplyDAMAGEDN=HYPERCYCLE
 Effect/EditorPrefix/ApplyDAMAGEUP=HYPERCYCLE
+Effect/EditorPrefix/BunkerWeaponSEARCH=HYPERCYCLE
 Effect/EditorPrefix/Claws=저글링
 Effect/EditorPrefix/ConsumptionDamage=HYPERCYCLE
 Effect/EditorPrefix/Diamondback=HYPERCYCLE

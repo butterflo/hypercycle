@@ -125,8 +125,9 @@
         <ScaleMin value="0.500000,0.500000,0.500000"/>
     </CModel>
     <CModel id="MarauderBaseAttackImpact">
-        <Model value="Assets\Effects\Protoss\Dragoon_Purifier_Coop_AirBomb\Dragoon_Purifier_Coop_AirBomb.m3"/>
+        <Model value="Assets\StoryModeProps\SMX1_KorhalFlakExplosion\SMX1_KorhalFlakExplosion.m3"/>
         <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <AnimSpeed value="0.500000"/>
     </CModel>
     <CModel id="MengskReaperD8ChargeWeapon">
         <ScaleMax value="4.000000,4.000000,4.000000"/>

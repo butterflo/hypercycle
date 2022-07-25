@@ -87,10 +87,14 @@ DocInfo/PatchNote002=Balance rework
 DocInfo/PatchNote003=- The game now has only three difficulties (all are clearable, manually tested)
 DocInfo/PatchNote004=- Pylon buffed: now takes up 1x1 for pathing
 DocInfo/PatchNote005=- Pylon buffed: increased firerate
-DocInfo/PatchNote006=- Minor UI cleanups
-DocInfo/PatchNote007=- Resource system bugfix
+DocInfo/PatchNote006=- Bunker buffed: targets 4 units each fire (now takes 4 times longer to fire)
+DocInfo/PatchNote007=- Minor UI cleanups
+DocInfo/PatchNote008=Bugfix
+DocInfo/PatchNote009=- Fixed orbital support platform exploit
+DocInfo/PatchNote010=- Resource system bugfix
 Effect/Name/ACCELToggleON=ACCEL Toggle ON
 Effect/Name/ApplyDAMAGEDN=Apply DAMAGE DN
+Effect/Name/BunkerWeaponSEARCH=Bunker Weapon SEARCH
 Effect/Name/Claws=Universal Damage
 Effect/Name/ConsumptionDamage=Supershield Damage
 Effect/Name/Diamondback=Tesla BEAM
@@ -117,7 +121,7 @@ MapInfo/Player06/Name=CPU Guard
 MapInfo/Player07/Name=Enemy
 MapInfo/Team00/Name=Core
 MapInfo/Team01/Name=
-Param/Value/00961FCE=<s val="ModCenterSize20Bold">Credits</s>
+Param/Value/00961FCE=<s val="STconsole">Credits</s>
 Param/Value/010DC1A1=SetOpacity
 Param/Value/08020DC6=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="FFFF00">
 Param/Value/0A15F553=<s val="OrbitronBold16"><c val="00FFFF">HYPER</c>
@@ -194,7 +198,7 @@ Param/Value/F758A83B=
 Param/Value/F8857DAB=???
 Param/Value/F920825E=<s val="OrbitronBold16">HARD</s>
 Param/Value/FB43E620=<c val="FFFF00">익스텐드 모드를 시작합니다.</c>
-Param/Value/FB99FEED=<s val="ModCenterSize24Bold">BGM Credits</s>
+Param/Value/FB99FEED=<s val="STconsole">Credits</s>
 Param/Value/FD7719B3=HYPERCYCLE : HARD -EXTEND-
 UI/ResourceName0=Power
 UI/ResourceName1=<c val="FFFFFF">Power load</c>
@@ -220,8 +224,8 @@ Unit/Name/SupplyDepotLowered=HC Module
 Upgrade/Name/NeosteelFrame=Efficiency Doubler
 Upgrade/Name/ZergGroundArmorsLevel1=Resistance
 Upgrade/Name/ZergMeleeWeaponsLevel1=Force
-Variant001/ModeDesc=..
-Variant001/ModeName=..
+Variant001/ModeDesc=It is what it is.
+Variant001/ModeName=Fast TD
 Weapon/Name/ATSLaserBattery=Yamato Strike
 Weapon/Name/Diamondback=Tesla
 Weapon/Name/MothershipBeam=Pylon Beam

@@ -151,6 +151,20 @@
         <Category value="Music"/>
         <Volume value="0.000000,0.000000"/>
     </CSound>
+    <CSound id="Marauder_AttackImpact">
+        <AssetArray index="0" File="Assets\Sounds\Explosion_Shakuras_Flak_1.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\Explosion_Shakuras_Flak_2.wav"/>
+        <AssetArray index="2" File="Assets\Sounds\Explosion_Shakuras_Flak_3.wav"/>
+        <AssetArray index="3" File="Assets\Sounds\Explosion_Shakuras_Flak_4.wav"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Category value="Movie"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
     <CSound id="Marauder_AttackLaunch">
         <AssetArray index="0" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_01.wav" FacialGroup=""/>
         <AssetArray index="1" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_02.wav" FacialGroup=""/>
@@ -322,6 +336,16 @@
     <CSound id="UI_Kerrigan_Abilities_EnergyBurst">
         <Category value="Movie"/>
         <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="UI_Nova_AuthenticationAgentAuthenticatingTextStart">
+        <AssetArray>
+            <File value="Assets\Sounds\UI_AuthenticationCursor.wav"/>
+            <Pitch value="-3.000000,-3.000000"/>
+            <Volume value="3.000000,3.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Category value="Movie"/>
+        <Chance value="100"/>
     </CSound>
     <CSound id="UI_Nova_AuthenticationInputCaretBlink"/>
     <CSound id="UI_TransmissionText">

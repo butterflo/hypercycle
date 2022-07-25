@@ -453,6 +453,8 @@
         <Height value="32"/>
         <CostResource index="Minerals" value="0"/>
         <BehaviorArray Link="OrbitalDelay"/>
+        <BehaviorArray Link="DamageBASELINE"/>
+        <BehaviorArray Link="DamageUP"/>
         <WeaponArray index="0" Link="ATSLaserBattery"/>
     </CUnit>
     <CUnit id="Sentry">
