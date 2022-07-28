@@ -86,6 +86,7 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
+        <DisplayAttackCount value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
         <TargetFilters value="Visible;Self,Player,Ally,Missile,Dead,Hidden"/>

@@ -1,5 +1,4 @@
 ﻿Abil/Name/ForgeResearch=quad
-Abil/Name/GuardianShield=Phoenix Shield
 Abil/Name/MedivacSpeedBoost=Next Wave
 Abil/Name/OracleWeapon=ACCEL Toggle
 Abil/Name/PrologueVoidArmor=Damage UP
@@ -21,8 +20,8 @@ Behavior/Name/OverloadPenalty=과부하
 Behavior/Name/PylonSummoningDummy=Pylon Summoning Dummy
 Behavior/Name/TimeWarpProduction=가속
 Behavior/Name/TimeWarpProduction8=가속
-Behavior/Name/TimeWarpProductionDMY=가속 DMY
-Behavior/Name/TimeWarpProductionDMY8=가속 DMY
+Behavior/Name/TimeWarpProductionDMY=가속
+Behavior/Name/TimeWarpProductionDMY8=가속
 Behavior/Name/TowerDISABLED=전력 차단됨
 Behavior/Tooltip/OverloadPenalty=<c val="FFFFFF">정지 상태입니다.</c>
 Behavior/Tooltip/TimeWarpProduction=<c val="FFFFFF">가속 상태입니다.</c>
@@ -34,8 +33,6 @@ Button/Name/Bunker=Bunker
 Button/Name/CommandCenterOrbRelay=Orbital Command
 Button/Name/CommanderArtanisSpearofAdunWarpHarmonization=Immortal
 Button/Name/FleetBeacon=Tesla Battery
-Button/Name/ForceField=cast Energy Field
-Button/Name/GhostAcademy=Rage
 Button/Name/Lower=<c val="FFFF00">다음 웨이브</c>
 Button/Name/OracleCloakingFieldTargeted=ON
 Button/Name/OracleWeaponOff=<c val="FFFF00">가속: OFF</c>
@@ -47,12 +44,12 @@ Button/Name/PrologueVoidArmor2=출력 약화
 Button/Name/ProtossBuild=소환
 Button/Name/PsiDisruptor=Supershield
 Button/Name/ResearchHighTemplarEnergyUpgrade=
-Button/Name/ResearchNeosteelFrame=<c val="00FFFF">UPGRADE</c>
+Button/Name/ResearchNeosteelFrame=<c val="00FFFF">업그레이드</c>
 Button/Name/SOAProxyPylon=Pylon
 Button/Name/SensorTower=EMP
 Button/Name/Sentry=summon Core
 Button/Name/TemporalRift=
-Button/Name/WraithCloakOff=OFF
+Button/Tooltip/AiurCityWarpGateAbandoned=<c val="FFFFFF">에너지를 생산합니다.</c><n/><n/><c val="00FFFF">(체력 재생 = 생산량 - 부하량)</c>
 Button/Tooltip/Archon=
 Button/Tooltip/Baneling=
 Button/Tooltip/Blink=<c val="FFFFFF">대상 지점으로 순간이동합니다.</c>
@@ -60,7 +57,7 @@ Button/Tooltip/Broodling=
 Button/Tooltip/Bunker=<c val="FFFF00">부하량 : <c val="FFFFFF">64</c><n/>공격력 : <c val="FFFFFF"><d ref="Effect,PunisherGrenadesU,Amount[0]"/><n/><n/><c val="00FFFF">(다연장 미사일)</c>
 Button/Tooltip/CommandCenterOrbRelay=<c val="FFFF00">부하량 : <c val="FFFFFF">256</c><n/>공격력 : <c val="FFFFFF"><d ref="Effect,YamatoU,Amount[0]"/><n/><n/><c val="00FFFF">(궤도 폭격)</c>
 Button/Tooltip/FleetBeacon=<c val="FFFF00">부하량 : <c val="FFFFFF">16</c><n/>공격력 : <c val="FFFFFF"><d ref="Effect,DiamondbackBeam,Amount"/></c><n/><n/><c val="00FFFF">(방사형 공격)</c>
-Button/Tooltip/HERCCompound=
+Button/Tooltip/HERCCompound=<c val="FFFFFF">연구소입니다.</c><n/><n/><c val="80FF00">(무적)</c>
 Button/Tooltip/MorphToOverseer=
 Button/Tooltip/OracleWeaponOff=<c val="FFFFFF">가속 모드를 비활성화합니다.</c>
 Button/Tooltip/OracleWeaponOn=<c val="FFFFFF">가속 모드를 활성화합니다.</c><n/><n/><c val="FFFF00">(모든 타워 4배로 가속)<n/>(모든 타워의 부하량 4배로 증가)</c>
@@ -69,22 +66,35 @@ Button/Tooltip/Predator=
 Button/Tooltip/PrologueVoidArmor=<c val="FFFFFF">타워의 출력을 높입니다.<n/><n/><c val="FFFF00">공격력: 기본값의 x1 증가<n/>부하량: 기본값의 x1 증가
 Button/Tooltip/PrologueVoidArmor2=<c val="FFFFFF">타워의 출력을 1단계 낮춥니다.<n/><n/><c val="FFFF00">(0단계가 되면 타워 정지)</c>
 Button/Tooltip/ProtossBuild=<c val="FFFFFF">공격 타워를 소환합니다.</c>
-Button/Tooltip/PsiDisruptor=<c val="FFFF00">부하량 : <c val="FFFFFF">1024</c><n/>공격력 : <c val="FFFFFF"><d ref="Effect,ConsumptionDamage,Amount[0]"/><n/><n/><c val="00FFFF">(방사형 타워, 가속 활성화시 범위 증가)</c>
+Button/Tooltip/PsiDisruptor=<c val="FFFF00">부하량 : <c val="FFFFFF">1024</c><n/>공격력 : <c val="FFFFFF"><d ref="Effect,ConsumptionDamage,Amount[0]"/><n/><n/><c val="00FFFF">(방사형 타워)</c>
 Button/Tooltip/ResearchNeosteelFrame=<c val="FFFFFF">연구 완료시: </n><c val="FFFF00">(발전량 x2)</c>
 Button/Tooltip/SOAProxyPylon=<c val="FFFF00">부하량 : <c val="FFFFFF">4</c><n/><c val="FFFF00">공격력 :</c> <c val="FFFFFF"><d ref="Effect,MothershipBeamDamage,Amount"/></c><n/><n/><c val="00FFFF">(장거리 공격)</c>
-Button/Tooltip/Sentry=<c val="FFFFFF">다목적 에너지 조작 유닛입니다.</c><n/><n/><c val="80FF00">(무적)
-Button/Tooltip/WraithCloakOff=<c val="FFFFFF">수퍼실드 작동을 중지합니다.</c>
+Button/Tooltip/Sentry=<c val="FFFFFF">일꾼입니다.</c><n/><n/><c val="80FF00">(무적)
+Button/Tooltip/SupplyDepot=<c val="FFFFFF">에너지를 생산합니다.</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=하이퍼사이클 최대 출력!<n/>밋밋한 디펜스는 끝났습니다.<n/>엔진 출력을 높여 모든 타워를 가속시켜 보세요.
-DocInfo/HowToPlayAdvanced00=각 난이도를 클리어하면 익스텐드 모드가 해금됩니다.
+DocInfo/DescLong=하이퍼사이클 최대 출력!<n/><n/>초고속 디펜스입니다.<n/>미쳐 날뛰는 맹독충으로부터 하이퍼사이클 엔진을 지켜내세요!
+DocInfo/HowToPlayAdvanced00=완벽한 발전량-부하량 균형을 유지하면 속도 보너스를 받을 수 있습니다.
+DocInfo/HowToPlayAdvanced01=채팅창에 format 을 입력하면 데이터를 초기화할 수 있습니다.
 DocInfo/HowToPlayBasic00=타워를 짓고 하이퍼사이클 엔진을 지키세요. 타워를 지으면 엔진의 부하량이 증가합니다.
 DocInfo/HowToPlayBasic01=가속 모드를 사용해서 타워를 가속시킬 수 있습니다. 가속 중에는 부하량이 증가합니다.
-DocInfo/HowToPlayBasic02=엔진을 업그레이드하면 발전량이 증가하고 더 많은 부하량을 견딜 수 있게 됩니다.
+DocInfo/HowToPlayBasic02=엔진을 업그레이드하면 발전량이 증가합니다.
 DocInfo/HowToPlayWinning00=모든 웨이브로부터 엔진을 지켜내면 승리합니다.
 DocInfo/Name=HYPERCYCLE
 DocInfo/PatchNote001=아케이드 게시
+DocInfo/PatchNote002=밸런스 업데이트
+DocInfo/PatchNote003=- 3개 난이도로 간소화됩니다. (모든 난이도는 실제로 깰 수 있습니다.)
+DocInfo/PatchNote004=- 수정탑 상향: 크기가 1x1로 작아집니다.
+DocInfo/PatchNote005=- 수정탑 상향: 공격 속도가 빨라집니다.
+DocInfo/PatchNote006=- 벙커 상향: 4개 유닛을 동시에 공격합니다. (공격 속도가 4배 느려집니다.)
+DocInfo/PatchNote007=- UI 보완
+DocInfo/PatchNote008=버그 수정
+DocInfo/PatchNote009=- 궤도 포격기 자원 버그 수정
+DocInfo/PatchNote010=- 자원 시스템 버그 수정
+DocInfo/PatchNote011=지역간 버전 동기화
+DocInfo/Website=https://butterflo.me/hypercycle
 Effect/Name/ACCELToggleON=ACCEL Toggle ON
 Effect/Name/ApplyDAMAGEDN=Apply DAMAGE DN
+Effect/Name/BunkerWeaponSEARCH=Bunker Weapon SEARCH
 Effect/Name/Claws=Universal Damage
 Effect/Name/ConsumptionDamage=Supershield Damage
 Effect/Name/Diamondback=Tesla BEAM
@@ -99,7 +109,6 @@ Effect/Name/VolatileBurst=Legion DAMAGE SET
 Effect/Name/VolatileBurstU=순간 폭발 - 2
 Effect/Name/VolatileBurstU3=순간 폭발 - 3
 Effect/Name/YamatoU=Yamato Hyperdisruptor DAMAGE
-Eversion Shield=Eversion Shield
 LoadingScreen/Tip=<s val="OrbitronBold16"><c val="40FFFF">developer </c> butterflo</s>
 MapInfo/Player00/Name=중립
 MapInfo/Player01/Name=P1
@@ -111,35 +120,33 @@ MapInfo/Player06/Name=CPU Guard
 MapInfo/Player07/Name=적대
 MapInfo/Team00/Name=Core
 MapInfo/Team01/Name=
-Param/Value/00961FCE=<s val="ModCenterSize20Bold">Credits</s>
+Param/Value/00961FCE=<s val="STconsole">Credits</s>
 Param/Value/010DC1A1=SetOpacity
 Param/Value/08020DC6=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="FFFF00">
 Param/Value/0A15F553=<s val="OrbitronBold16"><c val="00FFFF">HYPER</c>
 Param/Value/0B911FEE=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP <c val="FF4000">
-Param/Value/0BA2DC7C=<s val="OrbitronBold16">HARDEST</s>
 Param/Value/0C6B5FEF=CLEAR
 Param/Value/16F9A93A=%
 Param/Value/17D44172=HARD
 Param/Value/182EA4DF=<s val="STconsole"><c val="FF4000">ALERT: MOB ATK >= CORE HP<c/>
 Param/Value/1B3247B8=
 Param/Value/1C92A1F4=<s val="STconsole"><c val="FFFF00">ERROR: cannot block path</c>
-Param/Value/1E7097B6=<s val="OrbitronBold16">HARDER</s>
 Param/Value/24C1D5AC=<s val="STconsole">OK. awaiting user input</s>
 Param/Value/25C4AE2E=
 Param/Value/25E434C0=<s val="STconsole"><c val="FFFFFF"><c val="FFFF00">phase 1 in 16s</c>
 Param/Value/268589DA=세션 시작:
 Param/Value/27953E9E=<s val="OrbitronBold20"><c val="00FFFF">x
+Param/Value/286AB01A=HARDER
 Param/Value/29657352=<s val="STconsoleLarge"><c val="FFFFFF">Mob ATK <c val="00FFFF">
 Param/Value/2CB62581=<s val="OrbitronBold20">
 Param/Value/2DF929C8=<s val="OrbitronBold16"><c val="00FFFF">STATUS</c>
-Param/Value/44DE77DD=% CLEAR
-Param/Value/45ABCC29=<s val="OrbitronBold16">
 Param/Value/45CD168F=<s val="OrbitronBold16"><c val="00FFFF">
 Param/Value/46638244=
 Param/Value/4ABB23C0=<s val="OrbitronBold16"><c val="80FF00">WAVE</c>
 Param/Value/4AC9ABF5=<s val="OrbitronBold32"><c val="FFFFFF">Legion HP <c/>
 Param/Value/5301975A=<s val="OrbitronBold24"><c val="FFFF00">RETURN</c></s>
 Param/Value/58662B89=<s val="OrbitronBold16"><c val="00FFFF">OPTIMAL x8</c>
+Param/Value/58D0331C=<s val="STconsole">disc format OK</c>
 Param/Value/5B218D0F=<s val="STconsole"><c val="FFFFFF">Press <c val="00FF00">[ Enter ]</c></c>
 Param/Value/5DA21CE8=<s val="STconsole"><c val="00FFFF">HYPERCYCLE READY</c>
 Param/Value/5FBED14A=<s val="OrbitronBold16"><c val="00FF00">ACCEL x4</c>
@@ -148,15 +155,12 @@ Param/Value/65F2DE87=<s val="OrbitronBold16"><c val="FFFF00">ON x1</c>
 Param/Value/66473631=<s val="OrbitronBold40Center">
 Param/Value/67BAED66=<s val="STconsoleLarge"><c val="FFFFFF">Final Wave
 Param/Value/701D036D=% CLEAR
-Param/Value/70A1D2BC=<s val="STconsole"><c val="00FFFF">EXTEND mode enabled</c>
 Param/Value/774323F1=% CLEAR
-Param/Value/78332CA8=+
 Param/Value/81D6312D=65536
+Param/Value/82532A0A=HARDEST
 Param/Value/86034C8D=<s val="OrbitronBold16"><c val="00FFFF">
-Param/Value/89ACAA8B=+
-Param/Value/89C62A68=HARDEST
 Param/Value/8A7E3D95=<s val="STconsole">RELEASE
-Param/Value/8D288266=<s val="OrbitronBold20"><c val="FFFF00">"Mission Accepted"<n/>"Can I Overcome"<n/>"Breaking It"<n/>"Entering the Atmosphere"<n/></c><c val="80FF00">Heaven Variant OST - Jason Koohi<n/></c><n/><c val="FFFFFF">Copyright Disclaimer: I do not own the tracks, and no profit is being made with this game.</c>
+Param/Value/8D288266=<s val="OrbitronBold20"><c val="FFFF00">"Mission Accepted"<n/>"Can I Overcome"<n/>"Breaking It"<n/>"Entering the Atmosphere"<n/>"Heaven Variant! Transform!"<n/>"Spaceships Can Drift Too"<n/></c><c val="80FF00">Heaven Variant OST - Jason Koohi<n/></c><n/><c val="FFFFFF">Copyright Disclaimer: I do not own the tracks, and no profit is being made with this game.</c>
 Param/Value/8DED1A6A=SetTintColor {128,255,255 7.000000} 210.000000
 Param/Value/8EF1E429=<s val="OrbitronBold16">
 Param/Value/905E2DF6=<s val="STconsole"><c val="FFFF00">
@@ -166,46 +170,34 @@ Param/Value/9B9E505A=<s val="OrbitronBold32"><c val="C0C0C0">Legion HP <c/><c va
 Param/Value/A0C959DD=
 Param/Value/A1862305=<n/>Builder core
 Param/Value/A4675CF9=<s val="OrbitronBold16">
-Param/Value/A9E1C28C=
 Param/Value/AE3872F5=<s val="OrbitronBold32"><c val="c0c0c0">Wave <c val="8040FF">
 Param/Value/AF915F80=
 Param/Value/B55CC422=
+Param/Value/BAD08D67=<s val="STconsole">rebooting</c>
 Param/Value/BAD5843B= / 
 Param/Value/BBA1B7BE=<s val="STconsole"><c val="00FF00">phase 0 complete.</c>
 Param/Value/BCFF8AFD=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="80FF00">
 Param/Value/C5F37835=<s val="STconsole">loading disc..</s>
-Param/Value/CD1A118F=<c val="FFFF00">익스텐드 모드를 시작합니다.
 Param/Value/CF29234B=SetOpacity 0.500000 210.000000
-Param/Value/D0074110=
 Param/Value/D3293D4D=<s val="OrbitronBold40Center">GAME OVER</s>
-Param/Value/D4EE25F6=HYPERCYCLE : HARDEST -EXTEND-
 Param/Value/D5FA0A0B=<s val="OrbitronBold40Center">
 Param/Value/D63EA24B=<s val="OrbitronBold24"><c val="FFFF00">RETURN</c></s>
-Param/Value/D9A1690A=HYPERCYCLE : HARDER -EXTEND-
+Param/Value/DB566095=<s val="STconsoleKR"># 단축키<n/><c val="00FFFF">[ 1 ]</c> 일꾼<n/><c val="00FFFF">[ 2 ]</c> 하이퍼사이클 엔진<n/><c val="00FFFF">[ 2 C ]</c> 가속<n/><c val="00FFFF">[ 3 ]</c> 업그레이드<n/><c val="00FFFF">[ DEL ]</c> 타워 제거<n/></s>
 Param/Value/DD43F6E0=<s val="OrbitronBold16"><c val="FFFF00">RUSH</c>
-Param/Value/DFF5C6DD=HARDER
-Param/Value/E2E95D43=+
-Param/Value/E625AFCA=
 Param/Value/E68D85F7=<s val="OrbitronBold32"><c val="FFFFFF">Wave <c val="FFFF00">???
-Param/Value/EC8449E9=<s val="OrbitronBold16">
+Param/Value/EAC602D3=<s val="STconsole">path validation disabled</c>
 Param/Value/F1033361=<s val="OrbitronBold20"><c val="00FFFF">x
 Param/Value/F198DEDF=<s val="STconsole"><c val="00FFFF">HYPERCYCLE session initiated: </c>
-Param/Value/F4C0B8EB=% CLEAR
 Param/Value/F55B9F5F=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP <c val="FF4000">
 Param/Value/F6F002EB=
 Param/Value/F758A83B=
 Param/Value/F8857DAB=???
 Param/Value/F920825E=<s val="OrbitronBold16">HARD</s>
-Param/Value/FB43E620=<c val="FFFF00">익스텐드 모드를 시작합니다.</c>
-Param/Value/FB99FEED=<s val="ModCenterSize24Bold">BGM Credits</s>
-Param/Value/FCAE92C8=
-Param/Value/FD7719B3=HYPERCYCLE : HARD -EXTEND-
-Param/Value/FE3BC0BE=
+Param/Value/FB99FEED=<s val="STconsole">Credits</s>
 UI/ResourceName0=에너지
 UI/ResourceName1=<c val="FFFFFF">엔진 부하량</c>
 UI/ResourceName2=<c val="FFFFFF">엔진 발전량</c>
 Unit/Name/AiurCityWarpGateAbandoned=HYPERCYCLE
-Unit/Name/Archon=Legion [11]
 Unit/Name/Baneling=Legion [4]
 Unit/Name/Beacon_Protoss=Blue beacon
 Unit/Name/Beacon_Terran=Range beacon
@@ -215,9 +207,9 @@ Unit/Name/CommandCenter=Orbital Command
 Unit/Name/HERCCompound=Lab
 Unit/Name/InfestedSupply=Infested AllBase
 Unit/Name/PhotonCannon=Plasma Cannon
-Unit/Name/Predator=Legion [7]
 Unit/Name/PsiDisruptor=Supershield
 Unit/Name/Pylon=Pylon
+Unit/Name/Replicant=Practice Target
 Unit/Name/SJMercAATower=Orbital Support Platform
 Unit/Name/Sentry=Builder Core
 Unit/Name/ShieldBattery=Tesla Battery
@@ -226,8 +218,8 @@ Unit/Name/SupplyDepotLowered=HC Module
 Upgrade/Name/NeosteelFrame=Efficiency Doubler
 Upgrade/Name/ZergGroundArmorsLevel1=Resistance
 Upgrade/Name/ZergMeleeWeaponsLevel1=Force
-Variant001/ModeDesc=..
-Variant001/ModeName=..
+Variant001/ModeDesc=빠릅니다.
+Variant001/ModeName=고속 디펜스
 Weapon/Name/ATSLaserBattery=Yamato Strike
 Weapon/Name/Diamondback=Tesla
 Weapon/Name/MothershipBeam=Pylon Beam

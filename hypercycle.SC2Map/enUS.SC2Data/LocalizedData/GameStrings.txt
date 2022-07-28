@@ -1,5 +1,4 @@
 ﻿Abil/Name/ForgeResearch=quad
-Abil/Name/GuardianShield=Phoenix Shield
 Abil/Name/MedivacSpeedBoost=Next Wave
 Abil/Name/OracleWeapon=ACCEL Toggle
 Abil/Name/PrologueVoidArmor=Damage UP
@@ -17,7 +16,7 @@ Attribute001/Name=TEST
 Attribute001/Value001/Name=TRUE
 Attribute001/Value002/Name=FALSE
 Behavior/Name/OrbitalDelay=OrbitalDelay
-Behavior/Name/OverloadPenalty=과부하
+Behavior/Name/OverloadPenalty=Overload
 Behavior/Name/PylonSummoningDummy=Pylon Summoning Dummy
 Behavior/Name/TimeWarpProduction=ACCEL
 Behavior/Name/TimeWarpProduction8=ACCEL
@@ -34,8 +33,6 @@ Button/Name/Bunker=Bunker
 Button/Name/CommandCenterOrbRelay=Orbital Command
 Button/Name/CommanderArtanisSpearofAdunWarpHarmonization=Immortal
 Button/Name/FleetBeacon=Tesla Battery
-Button/Name/ForceField=cast Energy Field
-Button/Name/GhostAcademy=Rage
 Button/Name/Lower=<c val="FFFF00">Next wave</c>
 Button/Name/OracleCloakingFieldTargeted=ON
 Button/Name/OracleWeaponOff=<c val="FFFF00">ACCEL: OFF</c>
@@ -52,18 +49,20 @@ Button/Name/SOAProxyPylon=Pylon
 Button/Name/SensorTower=EMP
 Button/Name/Sentry=summon Core
 Button/Name/TemporalRift=
-Button/Name/WraithCloakOff=OFF
+Button/Tooltip/AiurCityWarpGateAbandoned=<c val="FFFFFF">Generates power.</c><n/><n/><c val="00FFFF">(HP regen = Power gen - Power load)</c>
+Button/Tooltip/Archon=
 Button/Tooltip/Baneling=
 Button/Tooltip/Blink=<c val="FFFFFF">Teleport to target location.</c>
 Button/Tooltip/Broodling=
 Button/Tooltip/Bunker=<c val="FFFF00">Power load : <c val="FFFFFF">64</c><n/>Damage/hit : <c val="FFFFFF"><d ref="Effect,PunisherGrenadesU,Amount[0]"/><n/><n/><c val="00FFFF">(Missile barrage)</c>
 Button/Tooltip/CommandCenterOrbRelay=<c val="FFFF00">Power load : <c val="FFFFFF">256</c><n/>Damage/hit : <c val="FFFFFF"><d ref="Effect,YamatoU,Amount[0]"/><n/><n/><c val="00FFFF">(Orbital strike)</c>
 Button/Tooltip/FleetBeacon=<c val="FFFF00">Power load : <c val="FFFFFF">16</c><n/>Damage/hit : <c val="FFFFFF"><d ref="Effect,DiamondbackBeam,Amount"/></c><n/><n/><c val="00FFFF">(AoE damage)</c>
-Button/Tooltip/HERCCompound=
+Button/Tooltip/HERCCompound=<c val="FFFFFF">The lab.</c><n/><n/><c val="80FF00">(Invulnerable)</c>
 Button/Tooltip/MorphToOverseer=
 Button/Tooltip/OracleWeaponOff=<c val="FFFFFF">Deactivate ACCEL.</c>
 Button/Tooltip/OracleWeaponOn=<c val="FFFFFF">Activate ACCEL.</c><n/><n/><c val="FFFF00">(All towers: speed x4)<n/>(All towers: power load x4)</c>
 Button/Tooltip/PhotonCannon=<c val="FFFF00">Power load : <c val="FFFFFF">1</c><n/>Damage/hit : </c><c val="FFFFFF"><d ref="Effect,PhotonCannonU,Amount"/></c><n/><n/>
+Button/Tooltip/Predator=
 Button/Tooltip/PrologueVoidArmor=<c val="FFFFFF">Increase power.<n/><n/><c val="FFFF00">Damage: increases by x1 baseline<n/>Power load: increases by x1 baseline
 Button/Tooltip/PrologueVoidArmor2=<c val="FFFFFF">Decrease power.<n/><n/><c val="FFFF00">(Tower stops when x0)</c>
 Button/Tooltip/ProtossBuild=<c val="FFFFFF">Summon towers.</c>
@@ -72,10 +71,9 @@ Button/Tooltip/ResearchNeosteelFrame=<c val="FFFFFF">Upon completion: </n><c val
 Button/Tooltip/SOAProxyPylon=<c val="FFFF00">Power load : <c val="FFFFFF">4</c><n/><c val="FFFF00">Damage/hit :</c> <c val="FFFFFF"><d ref="Effect,MothershipBeamDamage,Amount"/></c><n/><n/><c val="00FFFF">(Long-range attack)</c>
 Button/Tooltip/Sentry=<c val="FFFFFF">The builder.</c><n/><n/><c val="80FF00">(Invulnerable)
 Button/Tooltip/SupplyDepot=<c val="FFFFFF">Provides power.</c>
-Button/Tooltip/WraithCloakOff=<c val="FFFFFF">수퍼실드 작동을 중지합니다.</c>
 DocInfo/Author=butterflo
-DocInfo/DescLong=Hypercycle full throttle.<n/>Tower defense where everything goes fast.<n/>Use ACCEL to boost all towers.
-DocInfo/HowToPlayAdvanced00=Beat each level to unlock extend mode.
+DocInfo/DescLong=Hypercycle full throttle!<n/><n/>Instant-feedback tower defense where everything goes fast.<n/>Build your maze while banelings literally rush towards your base like crazy.
+DocInfo/HowToPlayAdvanced00=Reach a perfect power balance for speed bonus.
 DocInfo/HowToPlayAdvanced01=Type format on chat to clear save.
 DocInfo/HowToPlayBasic00=Build towers and defend the Hypercycle engine. Towers increase power load.
 DocInfo/HowToPlayBasic01=Use ACCEL to boost all towers. ACCEL increases power load.
@@ -92,6 +90,8 @@ DocInfo/PatchNote007=- Minor UI cleanups
 DocInfo/PatchNote008=Bugfix
 DocInfo/PatchNote009=- Fixed orbital support platform exploit
 DocInfo/PatchNote010=- Resource system bugfix
+DocInfo/PatchNote011=Version sync between all regions
+DocInfo/Website=https://butterflo.me/hypercycle
 Effect/Name/ACCELToggleON=ACCEL Toggle ON
 Effect/Name/ApplyDAMAGEDN=Apply DAMAGE DN
 Effect/Name/BunkerWeaponSEARCH=Bunker Weapon SEARCH
@@ -109,7 +109,6 @@ Effect/Name/VolatileBurst=Legion DAMAGE SET
 Effect/Name/VolatileBurstU=순간 폭발 - 2
 Effect/Name/VolatileBurstU3=순간 폭발 - 3
 Effect/Name/YamatoU=Yamato Hyperdisruptor DAMAGE
-Eversion Shield=Eversion Shield
 LoadingScreen/Tip=<s val="OrbitronBold16"><c val="40FFFF">developer </c> butterflo</s>
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=P1
@@ -179,13 +178,10 @@ Param/Value/BAD5843B= /
 Param/Value/BBA1B7BE=<s val="STconsole"><c val="00FF00">phase 0 complete.</c>
 Param/Value/BCFF8AFD=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="80FF00">
 Param/Value/C5F37835=<s val="STconsole">loading disc..</s>
-Param/Value/CD1A118F=<c val="FFFF00">익스텐드 모드를 시작합니다.
 Param/Value/CF29234B=SetOpacity 0.500000 210.000000
 Param/Value/D3293D4D=<s val="OrbitronBold40Center">GAME OVER</s>
-Param/Value/D4EE25F6=HYPERCYCLE : HARDEST -EXTEND-
 Param/Value/D5FA0A0B=<s val="OrbitronBold40Center">
 Param/Value/D63EA24B=<s val="OrbitronBold24"><c val="FFFF00">RETURN</c></s>
-Param/Value/D9A1690A=HYPERCYCLE : HARDER -EXTEND-
 Param/Value/DB566095=<s val="STconsole"># Hotkeys<n/><c val="00FFFF">[ 1 ]</c> Builder core<n/><c val="00FFFF">[ 2 ]</c> Hypercycle control<n/><c val="00FFFF">[ 2 C ]</c> ACCEL<n/><c val="00FFFF">[ 3 ]</c> Upgrade<n/><c val="00FFFF">[ DEL ]</c> Demolish<n/></s>
 Param/Value/DD43F6E0=<s val="OrbitronBold16"><c val="FFFF00">RUSH</c>
 Param/Value/E68D85F7=<s val="OrbitronBold32"><c val="FFFFFF">Wave <c val="FFFF00">???
@@ -197,9 +193,7 @@ Param/Value/F6F002EB=
 Param/Value/F758A83B=
 Param/Value/F8857DAB=???
 Param/Value/F920825E=<s val="OrbitronBold16">HARD</s>
-Param/Value/FB43E620=<c val="FFFF00">익스텐드 모드를 시작합니다.</c>
 Param/Value/FB99FEED=<s val="STconsole">Credits</s>
-Param/Value/FD7719B3=HYPERCYCLE : HARD -EXTEND-
 UI/ResourceName0=Power
 UI/ResourceName1=<c val="FFFFFF">Power load</c>
 UI/ResourceName2=<c val="FFFFFF">Power gen</c>
