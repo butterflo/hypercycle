@@ -1754,6 +1754,9 @@ bool gt_init_level_select_Func (bool testConds, bool runActions) {
     CameraLockInput(1, true);
     libNtve_gf_SetAlliance(1, 6, libNtve_ge_AllianceSetting_AllyWithSharedVision);
     libNtve_gf_SetAlliance(1, 5, libNtve_ge_AllianceSetting_Enemy);
+    PlayerSetState(1, c_playerStateShowWorldTip, false);
+    PlayerSetState(5, c_playerStateShowWorldTip, false);
+    PlayerSetState(6, c_playerStateShowWorldTip, false);
     UIHideTextCrawl(PlayerGroupAll());
     SoundPlay(SoundLink("ArmoryBanshee_Stand_Work", -1), PlayerGroupAll(), 100.0, 0.0);
     TriggerExecute(gt_init_gamestart, true, false);
@@ -2024,8 +2027,8 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
     // Variable Declarations
     fixed lv_angle;
     fixed lv_dist;
-    fixed lv_bdgbjrppvrorwcqg;
-    fixed lv_loqcwipuogoougjg;
+    fixed lv_pqejyjtyafmialjs;
+    fixed lv_fvttudbjnpxqdsmt;
 
     // Automatic Variable Declarations
     // Variable Initialization
@@ -2044,9 +2047,9 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
 
     lv_angle = AngleBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
     lv_dist = DistanceBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
-    lv_bdgbjrppvrorwcqg = (1.0 / (1.0 + SquareRoot(lv_dist)));
-    lv_loqcwipuogoougjg = (1.0 - lv_bdgbjrppvrorwcqg);
-    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_loqcwipuogoougjg) + (Cos(lv_angle) * lv_bdgbjrppvrorwcqg)), ((Sin(gv_avg_angle) * lv_loqcwipuogoougjg) + (Sin(lv_angle) * lv_bdgbjrppvrorwcqg)));
+    lv_pqejyjtyafmialjs = (1.0 / (1.0 + SquareRoot(lv_dist)));
+    lv_fvttudbjnpxqdsmt = (1.0 - lv_pqejyjtyafmialjs);
+    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_fvttudbjnpxqdsmt) + (Cos(lv_angle) * lv_pqejyjtyafmialjs)), ((Sin(gv_avg_angle) * lv_fvttudbjnpxqdsmt) + (Sin(lv_angle) * lv_pqejyjtyafmialjs)));
     return true;
 }
 
@@ -2364,7 +2367,7 @@ bool gt_wave_begin_Func (bool testConds, bool runActions) {
                 CameraPan(1, PointFromId(6), 4.0, -1, 50.0, false);
                 CameraLockInput(1, true);
                 CameraSetValue(1, c_cameraValueDistance, 54.0, 30.0, -1, 50.0);
-                Wait((13.6 * gv_const_timeratio), c_timeGame);
+                Wait((13.5 * gv_const_timeratio), c_timeGame);
                 TriggerExecute(gt_shake, true, false);
                 Wait((2.6 * gv_const_timeratio), c_timeGame);
                 TriggerExecute(gt_shake, true, false);
@@ -2491,10 +2494,23 @@ void gt_phase_intermission_Init () {
 // Trigger: waveupgrade_message
 //--------------------------------------------------------------------------------------------------
 bool gt_waveupgrade_message_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    text lv_text_color_for_wave;
+    text lv_text_color_for_hp;
+
     // Automatic Variable Declarations
+    // Variable Initialization
+    lv_text_color_for_wave = StringExternal("Param/Value/D4DB3A47");
+    lv_text_color_for_hp = StringExternal("Param/Value/23560C32");
+
     // Actions
     if (!runActions) {
         return true;
+    }
+
+    if ((gv_idx_difficulty == 3)) {
+        lv_text_color_for_wave = StringExternal("Param/Value/34763D9D");
+        lv_text_color_for_hp = StringExternal("Param/Value/142F7C80");
     }
 
     if ((gv_var_level <= 9)) {
@@ -2502,12 +2518,12 @@ bool gt_waveupgrade_message_Func (bool testConds, bool runActions) {
         UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/29657352") + IntToText(gv_var_atk)));
     }
     else if ((gv_var_level < 17)) {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/08020DC6") + IntToText(gv_var_level)));
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/F55B9F5F") + IntToText(gv_var_hp_real)));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/08020DC6") + lv_text_color_for_wave + IntToText(gv_var_level)));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/AF71748E") + lv_text_color_for_hp + IntToText(gv_var_hp_real)));
     }
     else if ((gv_var_level == 17)) {
         UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/67BAED66")));
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/0B911FEE") + IntToText(gv_var_hp_real)));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/806E4629") + lv_text_color_for_hp + IntToText(gv_var_hp_real)));
     }
     if ((gv_var_atk >= FixedToInt(UnitGetPropertyFixed(gv_const_allbase, c_unitPropLife, c_unitPropCurrent))) && (gv_waveupgrade_tip == false)) {
         gv_waveupgrade_tip = true;
@@ -2928,9 +2944,17 @@ void gt_clear_save_Init () {
 bool gt_cheat_Func (bool testConds, bool runActions) {
     // Variable Declarations
     int lv_x;
+    unit lv_u;
+    bool lv_cheat;
 
     // Automatic Variable Declarations
+    unitgroup auto5347AB93_g;
+    int auto5347AB93_u;
+    unitgroup auto7CA11849_g;
+    int auto7CA11849_u;
+
     // Variable Initialization
+    lv_cheat = true;
 
     // Actions
     if (!runActions) {
@@ -2939,6 +2963,23 @@ bool gt_cheat_Func (bool testConds, bool runActions) {
 
     TriggerEnable(gt_path_detect, false);
     UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/EAC602D3"));
+    while ((lv_cheat == true)) {
+        auto5347AB93_g = gv_cSquad;
+        auto5347AB93_u = UnitGroupCount(auto5347AB93_g, c_unitCountAll);
+        for (;; auto5347AB93_u -= 1) {
+            lv_u = UnitGroupUnitFromEnd(auto5347AB93_g, auto5347AB93_u);
+            if (lv_u == null) { break; }
+            UnitRemove(lv_u);
+        }
+        auto7CA11849_g = gv_aSquad;
+        auto7CA11849_u = UnitGroupCount(auto7CA11849_g, c_unitCountAll);
+        for (;; auto7CA11849_u -= 1) {
+            lv_u = UnitGroupUnitFromEnd(auto7CA11849_g, auto7CA11849_u);
+            if (lv_u == null) { break; }
+            UnitRemove(lv_u);
+        }
+        Wait(1.0, c_timeGame);
+    }
     return true;
 }
 

@@ -122,24 +122,26 @@ MapInfo/Team00/Name=Core
 MapInfo/Team01/Name=
 Param/Value/00961FCE=<s val="STconsole">Credits</s>
 Param/Value/010DC1A1=SetOpacity
-Param/Value/08020DC6=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="FFFF00">
+Param/Value/08020DC6=<s val="STconsoleLarge"><c val="FFFFFF">Wave 
 Param/Value/0A15F553=<s val="OrbitronBold16"><c val="00FFFF">HYPER</c>
-Param/Value/0B911FEE=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP <c val="FF4000">
 Param/Value/0C6B5FEF=CLEAR
+Param/Value/142F7C80=<c val="00FFFF">
 Param/Value/16F9A93A=%
 Param/Value/17D44172=HARD
-Param/Value/182EA4DF=<s val="STconsole"><c val="FF4000">ALERT: MOB ATK >= CORE HP<c/>
+Param/Value/182EA4DF=<s val="STconsole"><c val="FF4000">ALERT: MOB DAMAGE >= CORE HP<c/>
 Param/Value/1B3247B8=
 Param/Value/1C92A1F4=<s val="STconsole"><c val="FFFF00">ERROR: cannot block path</c>
+Param/Value/23560C32=<c val="FF4000">
 Param/Value/24C1D5AC=<s val="STconsole">OK. awaiting user input</s>
 Param/Value/25C4AE2E=
 Param/Value/25E434C0=<s val="STconsole"><c val="FFFFFF"><c val="FFFF00">phase 1 in 16s</c>
 Param/Value/268589DA=Session start:
 Param/Value/27953E9E=<s val="OrbitronBold20"><c val="00FFFF">x
 Param/Value/286AB01A=HARDER
-Param/Value/29657352=<s val="STconsoleLarge"><c val="FFFFFF">Mob ATK <c val="00FFFF">
+Param/Value/29657352=<s val="STconsoleLarge"><c val="FFFFFF">Mob Damage <c val="00FFFF">
 Param/Value/2CB62581=<s val="OrbitronBold20">
 Param/Value/2DF929C8=<s val="OrbitronBold16"><c val="00FFFF">STATUS</c>
+Param/Value/34763D9D=<c val="80FF00">
 Param/Value/45CD168F=<s val="OrbitronBold16"><c val="00FFFF">
 Param/Value/46638244=
 Param/Value/4ABB23C0=<s val="OrbitronBold16"><c val="80FF00">WAVE</c>
@@ -156,6 +158,7 @@ Param/Value/66473631=<s val="OrbitronBold40Center">
 Param/Value/67BAED66=<s val="STconsoleLarge"><c val="FFFFFF">Final Wave
 Param/Value/701D036D=% CLEAR
 Param/Value/774323F1=% CLEAR
+Param/Value/806E4629=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP 
 Param/Value/81D6312D=65536
 Param/Value/82532A0A=HARDEST
 Param/Value/86034C8D=<s val="OrbitronBold16"><c val="00FFFF">
@@ -171,6 +174,7 @@ Param/Value/A0C959DD=
 Param/Value/A1862305=<n/>Builder core
 Param/Value/A4675CF9=<s val="OrbitronBold16">
 Param/Value/AE3872F5=<s val="OrbitronBold32"><c val="c0c0c0">Wave <c val="8040FF">
+Param/Value/AF71748E=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP 
 Param/Value/AF915F80=
 Param/Value/B55CC422=
 Param/Value/BAD08D67=<s val="STconsole">rebooting</c>
@@ -180,15 +184,14 @@ Param/Value/BCFF8AFD=<s val="STconsoleLarge"><c val="FFFFFF">Wave <c val="80FF00
 Param/Value/C5F37835=<s val="STconsole">loading disc..</s>
 Param/Value/CF29234B=SetOpacity 0.500000 210.000000
 Param/Value/D3293D4D=<s val="OrbitronBold40Center">GAME OVER</s>
+Param/Value/D4DB3A47=<c val="FFFF00">
 Param/Value/D5FA0A0B=<s val="OrbitronBold40Center">
 Param/Value/D63EA24B=<s val="OrbitronBold24"><c val="FFFF00">RETURN</c></s>
 Param/Value/DB566095=<s val="STconsole"># Hotkeys<n/><c val="00FFFF">[ 1 ]</c> Builder core<n/><c val="00FFFF">[ 2 ]</c> Hypercycle control<n/><c val="00FFFF">[ 2 C ]</c> ACCEL<n/><c val="00FFFF">[ 3 ]</c> Upgrade<n/><c val="00FFFF">[ DEL ]</c> Demolish<n/></s>
 Param/Value/DD43F6E0=<s val="OrbitronBold16"><c val="FFFF00">RUSH</c>
-Param/Value/E68D85F7=<s val="OrbitronBold32"><c val="FFFFFF">Wave <c val="FFFF00">???
 Param/Value/EAC602D3=<s val="STconsole">path validation disabled</c>
 Param/Value/F1033361=<s val="OrbitronBold20"><c val="00FFFF">x
 Param/Value/F198DEDF=<s val="STconsole"><c val="00FFFF">HYPERCYCLE session initiated: </c>
-Param/Value/F55B9F5F=<s val="STconsoleLarge"><c val="FFFFFF">Mob HP <c val="FF4000">
 Param/Value/F6F002EB=
 Param/Value/F758A83B=
 Param/Value/F8857DAB=???

@@ -3,21 +3,21 @@
     <ObjectDoodad Id="2074399043" Position="128,125,7.9934" Scale="1,1,1" Type="LandingLights">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="874051083" Position="125,128,7.9934" Scale="1,1,1" Type="LandingLights">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
     <ObjectDoodad Id="834464727" Position="131,131,7.9934" Rotation="0.7851" Scale="3,1.5,3" Type="TarsonisArrow" TintColor="0,0,255 4.000000">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
         <Flag Index="NoDoodadFootprint" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="448584784" Position="131,128,7.9934" Scale="1,1,1" Type="LandingLights">
+    <ObjectDoodad Id="874051083" Position="125,128,7.9931" Scale="1,1,1" Type="LandingLights">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="322578114" Position="131,125,7.9934" Rotation="5.4975" Scale="3,1.5,3" Type="TarsonisArrow" TintColor="0,0,255 4.000000">
         <Flag Index="HeightAbsolute" Value="1"/>
         <Flag Index="ForcePlacement" Value="1"/>
         <Flag Index="NoDoodadFootprint" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="448584784" Position="131,128,7.9934" Scale="1,1,1" Type="LandingLights">
+        <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectDoodad Id="1973389232" Position="125,125,7.9934" Rotation="3.9267" Scale="3,1.5,3" Type="TarsonisArrow" TintColor="0,0,255 4.000000">
         <Flag Index="HeightAbsolute" Value="1"/>
@@ -29,7 +29,7 @@
         <Flag Index="ForcePlacement" Value="1"/>
         <Flag Index="NoDoodadFootprint" Value="1"/>
     </ObjectDoodad>
-    <ObjectDoodad Id="438370289" Position="128,131,7.9934" Scale="1,1,1" Type="LandingLights">
+    <ObjectDoodad Id="438370289" Position="128,131,7.9931" Scale="1,1,1" Type="LandingLights" TintColor="NULL 3.000000">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
     <ObjectPoint Id="6" Position="128,128,0" Scale="1,1,1" Type="Normal" Name="Base" Color="0,0,0,0"/>
@@ -37,12 +37,12 @@
     <ObjectPoint Id="1198677575" Position="133.5,133.5,0" Scale="1,1,1" Type="Normal" Name="HC 1" Color="0,0,0,0"/>
     <ObjectPoint Id="1853509835" Position="128,126,0" Scale="1,1,1" Type="Normal" Name="CameraCenter" Color="0,0,0,0"/>
     <ObjectPoint Id="1024005589" Position="255,255,0" Scale="1,1,1" Type="Normal" Name="flyby_destination" Color="0,0,0,0"/>
-    <ObjectPoint Id="1211130409" Position="1,1,0" Scale="1,1,1" Type="Normal" Name="flyby_spawn" Color="0,0,0,0"/>
     <ObjectPoint Id="3392444" Position="129.5,126.5,0" Scale="1,1,1" Type="Normal" Name="Lab" Color="0,0,0,0"/>
+    <ObjectPoint Id="1211130409" Position="1,1,0" Scale="1,1,1" Type="Normal" Name="flyby_spawn" Color="0,0,0,0"/>
     <ObjectPoint Id="875553994" Position="133.5,122.5,0" Scale="1,1,1" Type="Normal" Name="HC 4" Color="0,0,0,0"/>
     <ObjectPoint Id="43357067" Position="128,192,0" Scale="1,1,1" Type="Normal" Name="PathScan" Color="0,0,0,0"/>
-    <ObjectPoint Id="539906439" Position="122.5,122.5,0" Scale="1,1,1" Type="Normal" Name="HC 3" Color="0,0,0,0"/>
     <ObjectPoint Id="1900341835" Position="122.5,133.5,0" Scale="1,1,1" Type="Normal" Name="HC 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="539906439" Position="122.5,122.5,0" Scale="1,1,1" Type="Normal" Name="HC 3" Color="0,0,0,0"/>
     <ObjectPoint Id="2029453579" Position="128,0,0" Scale="1,1,1" Type="Normal" Name="Black" Color="0,0,0,0"/>
     <ObjectUnit Id="562209331" Position="128,128,0" Scale="1,1,1" UnitType="AiurCityWarpGateAbandoned" Player="5"/>
 </PlacedObjects>
