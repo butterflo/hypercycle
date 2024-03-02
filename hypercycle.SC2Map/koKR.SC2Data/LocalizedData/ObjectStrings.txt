@@ -62,6 +62,7 @@ Behavior/Name/SupershieldCostDebuffStacker=SupershieldCostDebuffStacker
 Effect/EditorPrefix/ACCELToggleON=HYPERCYCLE
 Effect/EditorPrefix/ApplyDAMAGEDN=HYPERCYCLE
 Effect/EditorPrefix/ApplyDAMAGEUP=HYPERCYCLE
+Effect/EditorPrefix/BunkerWeaponSEARCH=HYPERCYCLE
 Effect/EditorPrefix/Claws=저글링
 Effect/EditorPrefix/ConsumptionDamage=HYPERCYCLE
 Effect/EditorPrefix/Diamondback=HYPERCYCLE
@@ -126,19 +127,18 @@ RequirementNode/Name/7=7
 RequirementNode/Name/AndEqCountUpgradeNeosteelFrameQueuedOrBetter0EqCountUpgradeNeosteelFrameCompleteOnly0=CountUpgrade(NeosteelFrame,QueuedOrBetter) == 0 && CountUpgrade(NeosteelFrame,CompleteOnly) == 0
 RequirementNode/Name/AndEqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2=CountUpgrade(ProtossAirWeaponsLevel1,InProgressOnly) == 0 && CountUpgrade(ProtossAirWeaponsLevel1,CompleteOnly) < 2
 RequirementNode/Name/AndEqCountUpgradeProtossShieldsLevel1InProgressOnly0EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0EqCountUpgradeNeosteelFrameInProgressOnly0=CountUpgrade(ProtossShieldsLevel1,InProgressOnly) == 0 && CountUpgrade(ProtossGroundWeaponsLevel1,InProgressOnly) == 0 && CountUpgrade(ProtossAirWeaponsLevel1,InProgressOnly) == 0 && CountUpgrade(TerranInfantryWeaponsLevel1,InProgressOnly) == 0 && CountUpgrade(NeosteelFrame,InProgressOnly) == 0
-RequirementNode/Name/AndLTCountUpgradehaltech4CompleteOnly16EqCountUpgradehaltech4InProgressOnly0=CountUpgrade(haltech4,CompleteOnly) < 16 && CountUpgrade(haltech4,InProgressOnly) == 0
 RequirementNode/Name/AndLTCountUpgradeNeosteelFrameCompleteOnly10EqCountUpgradeNeosteelFrameInProgressOnly0=CountUpgrade(NeosteelFrame,CompleteOnly) < 10 && CountUpgrade(NeosteelFrame,InProgressOnly) == 0
 RequirementNode/Name/AndLTCountUpgradeProtossShieldsLevel1QueuedOrBetter8=CountUpgrade(ProtossShieldsLevel1,QueuedOrBetter) < 8 && ()
 RequirementNode/Name/AndLTCountUpgradeSJHyperionHangerCheckQueuedOnly16EqCountUpgradeNeosteelFrameInProgressOnly0EqCountUpgradeTerranInfantryWeaponsLevel1CompleteOnly1=CountUpgrade(SJHyperionHangerCheck,QueuedOnly) < 16 && CountUpgrade(NeosteelFrame,InProgressOnly) == 0 && CountUpgrade(TerranInfantryWeaponsLevel1,CompleteOnly) == 1
-RequirementNode/Name/CountUpgradehaltech4CompleteOnly=CountUpgrade(haltech4,CompleteOnly)
-RequirementNode/Name/CountUpgradehaltech4InProgressOnly=CountUpgrade(haltech4,InProgressOnly)
+RequirementNode/Name/AndLTCountUpgradehaltech4CompleteOnly16EqCountUpgradehaltech4InProgressOnly0=CountUpgrade(haltech4,CompleteOnly) < 16 && CountUpgrade(haltech4,InProgressOnly) == 0
 RequirementNode/Name/CountUpgradeNeosteelFrameInProgressOnly=CountUpgrade(NeosteelFrame,InProgressOnly)
 RequirementNode/Name/CountUpgradeProtossAirWeaponsLevel1InProgressOnly=CountUpgrade(ProtossAirWeaponsLevel1,InProgressOnly)
 RequirementNode/Name/CountUpgradeProtossGroundWeaponsLevel1InProgressOnly=CountUpgrade(ProtossGroundWeaponsLevel1,InProgressOnly)
 RequirementNode/Name/CountUpgradeProtossShieldsLevel1InProgressOnly=CountUpgrade(ProtossShieldsLevel1,InProgressOnly)
 RequirementNode/Name/CountUpgradeSJHyperionHangerCheckQueuedOnly=CountUpgrade(SJHyperionHangerCheck,QueuedOnly)
 RequirementNode/Name/CountUpgradeTerranInfantryWeaponsLevel1InProgressOnly=CountUpgrade(TerranInfantryWeaponsLevel1,InProgressOnly)
-RequirementNode/Name/EqCountUpgradehaltech4InProgressOnly0=CountUpgrade(haltech4,InProgressOnly) == 0
+RequirementNode/Name/CountUpgradehaltech4CompleteOnly=CountUpgrade(haltech4,CompleteOnly)
+RequirementNode/Name/CountUpgradehaltech4InProgressOnly=CountUpgrade(haltech4,InProgressOnly)
 RequirementNode/Name/EqCountUpgradeNeosteelFrameCompleteOnly0=CountUpgrade(NeosteelFrame,CompleteOnly) == 0
 RequirementNode/Name/EqCountUpgradeNeosteelFrameInProgressOnly0=CountUpgrade(NeosteelFrame,InProgressOnly) == 0
 RequirementNode/Name/EqCountUpgradeNeosteelFrameQueuedOrBetter0=CountUpgrade(NeosteelFrame,QueuedOrBetter) == 0
@@ -149,11 +149,12 @@ RequirementNode/Name/EqCountUpgradeProtossAirWeaponsLevel1InProgressOnly0=CountU
 RequirementNode/Name/EqCountUpgradeProtossGroundWeaponsLevel1InProgressOnly0=CountUpgrade(ProtossGroundWeaponsLevel1,InProgressOnly) == 0
 RequirementNode/Name/EqCountUpgradeProtossShieldsLevel1InProgressOnly0=CountUpgrade(ProtossShieldsLevel1,InProgressOnly) == 0
 RequirementNode/Name/EqCountUpgradeTerranInfantryWeaponsLevel1InProgressOnly0=CountUpgrade(TerranInfantryWeaponsLevel1,InProgressOnly) == 0
-RequirementNode/Name/LTCountUpgradehaltech4CompleteOnly16=CountUpgrade(haltech4,CompleteOnly) < 16
+RequirementNode/Name/EqCountUpgradehaltech4InProgressOnly0=CountUpgrade(haltech4,InProgressOnly) == 0
 RequirementNode/Name/LTCountUpgradeNeosteelFrameCompleteOnly10=CountUpgrade(NeosteelFrame,CompleteOnly) < 10
 RequirementNode/Name/LTCountUpgradeProtossAirWeaponsLevel1CompleteOnly2=CountUpgrade(ProtossAirWeaponsLevel1,CompleteOnly) < 2
 RequirementNode/Name/LTCountUpgradeProtossShieldsLevel1QueuedOrBetter8=CountUpgrade(ProtossShieldsLevel1,QueuedOrBetter) < 8
 RequirementNode/Name/LTCountUpgradeSJHyperionHangerCheckQueuedOnly16=CountUpgrade(SJHyperionHangerCheck,QueuedOnly) < 16
+RequirementNode/Name/LTCountUpgradehaltech4CompleteOnly16=CountUpgrade(haltech4,CompleteOnly) < 16
 RequirementNode/Name/NotCountUpgradeTerranInfantryWeaponsLevel1QueuedOrBetter=!CountUpgrade(TerranInfantryWeaponsLevel1,QueuedOrBetter)
 Sound/EditorPrefix/AlarakPsionicOrbAttack=HYPERCYCLE
 Sound/EditorPrefix/Ghost_EMPAttackLaunch=HYPERCYCLE

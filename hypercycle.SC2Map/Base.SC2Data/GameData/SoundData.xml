@@ -164,6 +164,7 @@
         <AssetArray index="9" removed="1"/>
         <Category value="Movie"/>
         <Volume value="3.000000,3.000000"/>
+        <DupeMaximumMethod value="Prevent"/>
     </CSound>
     <CSound id="Marauder_AttackLaunch">
         <AssetArray index="0" File="Assets\Sounds\Mutator_Fireworks_Missle_Attack_Launch_01.wav" FacialGroup=""/>

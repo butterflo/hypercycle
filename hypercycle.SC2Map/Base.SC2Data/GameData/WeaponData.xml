@@ -112,5 +112,6 @@
         <ArcSlop value="0"/>
         <PeriodDisplayFlags index="CollapseBuffed" value="1"/>
         <Effect value="BunkerWeaponSEARCH"/>
+        <DisplayAttackCount value="4"/>
     </CWeaponLegacy>
 </Catalog>

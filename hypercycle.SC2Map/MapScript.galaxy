@@ -2027,8 +2027,8 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
     // Variable Declarations
     fixed lv_angle;
     fixed lv_dist;
-    fixed lv_yjwttnflnadvtjgh;
-    fixed lv_sudsgurbnnmmhhbd;
+    fixed lv_yulwjowstqwohdpe;
+    fixed lv_yfsabldfbglfnijj;
 
     // Automatic Variable Declarations
     // Variable Initialization
@@ -2047,9 +2047,9 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
 
     lv_angle = AngleBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
     lv_dist = DistanceBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
-    lv_yjwttnflnadvtjgh = (1.0 / (1.0 + SquareRoot(lv_dist)));
-    lv_sudsgurbnnmmhhbd = (1.0 - lv_yjwttnflnadvtjgh);
-    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_sudsgurbnnmmhhbd) + (Cos(lv_angle) * lv_yjwttnflnadvtjgh)), ((Sin(gv_avg_angle) * lv_sudsgurbnnmmhhbd) + (Sin(lv_angle) * lv_yjwttnflnadvtjgh)));
+    lv_yulwjowstqwohdpe = (1.0 / (1.0 + SquareRoot(lv_dist)));
+    lv_yfsabldfbglfnijj = (1.0 - lv_yulwjowstqwohdpe);
+    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_yfsabldfbglfnijj) + (Cos(lv_angle) * lv_yulwjowstqwohdpe)), ((Sin(gv_avg_angle) * lv_yfsabldfbglfnijj) + (Sin(lv_angle) * lv_yulwjowstqwohdpe)));
     return true;
 }
 
@@ -2949,11 +2949,6 @@ bool gt_cheat_Func (bool testConds, bool runActions) {
     bool lv_cheat;
 
     // Automatic Variable Declarations
-    unitgroup auto5347AB93_g;
-    int auto5347AB93_u;
-    unitgroup auto7CA11849_g;
-    int auto7CA11849_u;
-
     // Variable Initialization
     lv_cheat = true;
 
@@ -2964,23 +2959,6 @@ bool gt_cheat_Func (bool testConds, bool runActions) {
 
     TriggerEnable(gt_path_detect, false);
     UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/EAC602D3"));
-    while ((lv_cheat == true)) {
-        auto5347AB93_g = gv_cSquad;
-        auto5347AB93_u = UnitGroupCount(auto5347AB93_g, c_unitCountAll);
-        for (;; auto5347AB93_u -= 1) {
-            lv_u = UnitGroupUnitFromEnd(auto5347AB93_g, auto5347AB93_u);
-            if (lv_u == null) { break; }
-            UnitRemove(lv_u);
-        }
-        auto7CA11849_g = gv_aSquad;
-        auto7CA11849_u = UnitGroupCount(auto7CA11849_g, c_unitCountAll);
-        for (;; auto7CA11849_u -= 1) {
-            lv_u = UnitGroupUnitFromEnd(auto7CA11849_g, auto7CA11849_u);
-            if (lv_u == null) { break; }
-            UnitRemove(lv_u);
-        }
-        Wait(1.0, c_timeGame);
-    }
     return true;
 }
 
@@ -3047,6 +3025,7 @@ bool gt_lose_Func (bool testConds, bool runActions) {
     gf_status_update(-1);
     SoundPlay(SoundLink("OdinBuild_Clunk", -1), PlayerGroupAll(), 100.0, 0.0);
     gv_global_summonstate_lockdown = true;
+    TriggerStop(gt_summonFX);
     Wait(1.2, c_timeGame);
     SoundPlay(SoundLink("OdinBuild_Clunk", -1), PlayerGroupAll(), 100.0, 0.0);
     UISetMode(PlayerGroupAll(), c_uiModeFullscreen, 0.0);
