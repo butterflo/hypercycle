@@ -22,6 +22,7 @@
 <Behavior id="TimeWarpProductionDMY8"/>
 <Behavior id="TimeWarpProductionDMY"/>
 <Behavior id="TimeWarpProduction8"/>
+<Light id="Char"/>
 <Light id="ZhakulDas"/>
 <Light id="ShakurasCity"/>
 <Light id="KorhalCityEx2"/>

@@ -2027,8 +2027,8 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
     // Variable Declarations
     fixed lv_angle;
     fixed lv_dist;
-    fixed lv_pqejyjtyafmialjs;
-    fixed lv_fvttudbjnpxqdsmt;
+    fixed lv_yjwttnflnadvtjgh;
+    fixed lv_sudsgurbnnmmhhbd;
 
     // Automatic Variable Declarations
     // Variable Initialization
@@ -2047,9 +2047,9 @@ bool gt_death_circmean_Func (bool testConds, bool runActions) {
 
     lv_angle = AngleBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
     lv_dist = DistanceBetweenPoints(PointFromId(6), UnitGetPosition(EventUnit()));
-    lv_pqejyjtyafmialjs = (1.0 / (1.0 + SquareRoot(lv_dist)));
-    lv_fvttudbjnpxqdsmt = (1.0 - lv_pqejyjtyafmialjs);
-    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_fvttudbjnpxqdsmt) + (Cos(lv_angle) * lv_pqejyjtyafmialjs)), ((Sin(gv_avg_angle) * lv_fvttudbjnpxqdsmt) + (Sin(lv_angle) * lv_pqejyjtyafmialjs)));
+    lv_yjwttnflnadvtjgh = (1.0 / (1.0 + SquareRoot(lv_dist)));
+    lv_sudsgurbnnmmhhbd = (1.0 - lv_yjwttnflnadvtjgh);
+    gv_avg_angle = ATan2(((Cos(gv_avg_angle) * lv_sudsgurbnnmmhhbd) + (Cos(lv_angle) * lv_yjwttnflnadvtjgh)), ((Sin(gv_avg_angle) * lv_sudsgurbnnmmhhbd) + (Sin(lv_angle) * lv_yjwttnflnadvtjgh)));
     return true;
 }
 
@@ -2382,6 +2382,7 @@ bool gt_wave_begin_Func (bool testConds, bool runActions) {
                 CameraLockInput(1, true);
                 CameraSetValue(1, c_cameraValueDistance, 54.0, 5.0, -1, 50.0);
                 Wait(1.4, c_timeReal);
+                GameSetLighting("Char", 0.0);
             }
             CameraSetValue(1, c_cameraValueDistance, 48.0, 0.0, -1, 0.0);
             CameraLockInput(1, false);

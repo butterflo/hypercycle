@@ -14974,6 +14974,7 @@
         <FunctionCall Type="FunctionCall" Id="B0FD2040"/>
         <FunctionCall Type="FunctionCall" Id="ECD0B57E"/>
         <FunctionCall Type="FunctionCall" Id="6D2A333A"/>
+        <FunctionCall Type="FunctionCall" Id="76649458"/>
         <FunctionCall Type="FunctionCall" Id="0347CC94"/>
         <FunctionCall Type="FunctionCall" Id="A68A8F60"/>
         <FunctionCall Type="FunctionCall" Id="F1B6C856"/>
@@ -15181,6 +15182,23 @@
     <Element Type="Param" Id="4EFACA09">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000420"/>
         <Preset Type="PresetValue" Library="Ntve" Id="00000012"/>
+    </Element>
+    <Element Type="FunctionCall" Id="76649458">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="BB08B228"/>
+        <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000005"/>
+        <Parameter Type="Param" Id="12BF7427"/>
+        <Parameter Type="Param" Id="3FE182EC"/>
+    </Element>
+    <Element Type="Param" Id="12BF7427">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="E7C53B1B"/>
+        <Value>0.0</Value>
+        <ValueType Type="fixed"/>
+    </Element>
+    <Element Type="Param" Id="3FE182EC">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="E71472FB"/>
+        <Value>Char</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Light"/>
     </Element>
     <Element Type="FunctionCall" Id="0347CC94">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000242"/>
